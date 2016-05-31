@@ -1,5 +1,5 @@
 /*header*/
-header{background-color: #2b81da;position: relative;z-index: 2;
+header{background-color: #2b81da;position: relative;z-index: 84;
     .header-desctop{min-height: 128px;display: flex;align-items:center;justify-content:space-between;
         .navigation{align-self: flex-end;width: 100%;max-width: 600px;
             &>nav>ul{margin:0;padding: 0;display: flex;list-style-type: none;align-items: center;
@@ -46,7 +46,7 @@ header{background-color: #2b81da;position: relative;z-index: 2;
             a.button-line{font-size: 13px;margin-bottom: 28px;margin-top: 19px;}
         }
     }
-
+    .header-mobile{display: none;}
 }
 
 .button-line{

@@ -1,0 +1,20 @@
+.slider-biznes{
+	.mbox{display: relative;
+		.biznes-heading{text-transform: uppercase; font-family: 'Museo'; font-weight: 900; font-size: 60px;
+			h2{color:#2b3bda;  text-align: center;
+				span{color: #48fefc;}
+			}
+		}
+		.biznes-slider{display: flex; justify-content: flex-end;
+			.slide{border: 1px solid #e9e9e9; margin: 0 20px 0 0;
+				.images-for-slider{text-align: center;padding: 40px 0 0 0 ;
+					svg{}
+				}
+				.text-content{padding: 0 20px 40px 20px; max-width: 250px; margin: 0 auto; 
+					p{text-align: center;}
+				}
+			}
+		}
+		.it-man-image{position: absolute; display: block;left: -400px; top: 100px;}
+	}
+}
