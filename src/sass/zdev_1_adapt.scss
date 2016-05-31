@@ -15,6 +15,18 @@
 }
 @media screen and (max-width: 992px){
 
+    /* footer */
+
+        .footer{
+
+            .footer-wrap{display: none;}
+
+            .footer-wrap-mobile{display:flex;}
+
+        }
+
+    /* /footer */
+
 }
 @media screen and (max-width: 767px){
 
