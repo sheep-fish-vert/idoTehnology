@@ -19,10 +19,10 @@ header{background-color: #2b81da;position: relative;z-index: 84;
                         &:before{transition: background 0.3s;transform: translateX(-50%);transform-origin: 50% 0;content: '';position: absolute;left: 50%;background-color: #48fefc;height: 2px;z-index: 10;bottom:10px;transition:width ease-out .2s .2s;width: 0;}
                     }
                     // second lvl
-                    &>ul{display: none;position: absolute;padding: 0;list-style-type: none;left: 0;right: 0;padding: 9px 32px;align-items:center;justify-content:flex-start;flex-wrap: wrap;background-color: #fff;backface-visibility: hidden;
+                    &>ul{display: none;position: absolute;padding: 0;list-style-type: none;left: 0;right: 0;padding: 9px 27px;align-items:center;justify-content:flex-start;flex-wrap: wrap;background-color: #fff;backface-visibility: hidden;
                         &:after{content: '';display: block;clear: both;}
                         li{width: 33.33%;float: left;
-                            a{position: relative;justify-content: flex-start;padding-right: 5px;height: 58px;
+                            a{position: relative;justify-content: flex-start;padding-right: 5px;height: 58px;font-weight: 500;font-family: 'Museo';
                                 &:hover{
                                     span{color: #2b3bda;}
                                     img:first-child{opacity: 0;}
