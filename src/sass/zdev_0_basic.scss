@@ -95,6 +95,11 @@ input, textarea{
     }
 }
 
+@include font-face('Muller','Muller-Regular');
+@include font-face('Museo','MuseoSansCyrl-500', 500);
+@include font-face('Museo','MuseoSansCyrl-700', 700);
+@include font-face('Museo','MuseoSansCyrl-900', 900);
+
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 
 
