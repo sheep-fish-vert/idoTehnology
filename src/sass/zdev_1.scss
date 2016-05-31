@@ -103,15 +103,15 @@
 
 /* about-company */
 
-    .about-company{background-color:#f6f6f6;padding-top: 90px;
+    .about-company{background-color:#f6f6f6;padding: 90px 0 20px 0;
         .about-company-text{max-width: 770px;width: 100%;margin: 0 auto 60px auto;}
     }
 
-    .line-slider{
-
-        .line-item-wrap{display: flex;align-items: center;
+    .line-slider{display: flex;justify-content: space-around;align-items: center;flex-wrap:wrap;
+        .line-item{padding:0 5px;margin-bottom: 20px;}
+        .line-item-wrap{display: flex;align-items: center;justify-content: center;
             .line-img{margin-right: 10px;}
-            .line-text{text-transform: uppercase;font-weight: 600;max-width: 250px;width: 100%;line-height: 1.25;}
+            .line-text{text-transform: uppercase;font-weight: 600;max-width: 205px;width: 100%;line-height: 1.25;}
         }
 
 
