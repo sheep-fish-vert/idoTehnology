@@ -6,6 +6,21 @@
 
 /* /button */
 
+/* ctext */
+
+    .ctext{
+        h6, h5, h4, h3, h2, h1{color:#000;margin: 0 0 20px 0;}
+        h1{font-size: 72px;}
+        h2{font-size: 60px;}
+        h3{font-size: 48px;}
+        h4{font-size: 36px;}
+        h5{font-size: 24px;}
+        h6{font-size: 18px;}
+        p{font-size: 14px;color:#000;line-height: 1.75;}
+    }
+
+/* /ctext */
+
 /* footer */
 
     .footer{
@@ -85,3 +100,21 @@
     }
 
 /* /footer */
+
+/* about-company */
+
+    .about-company{background-color:#f6f6f6;padding-top: 90px;
+        .about-company-text{max-width: 770px;width: 100%;margin: 0 auto 60px auto;}
+    }
+
+    .line-slider{
+
+        .line-item-wrap{display: flex;align-items: center;
+            .line-img{margin-right: 10px;}
+            .line-text{text-transform: uppercase;font-weight: 600;max-width: 250px;width: 100%;line-height: 1.25;}
+        }
+
+
+    }
+
+/* /about-company */
