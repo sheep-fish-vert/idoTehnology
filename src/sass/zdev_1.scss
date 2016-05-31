@@ -68,7 +68,19 @@
 
         }
 
-        .footer-wrap-mobile{display: none;}
+        .footer-wrap-mobile{display: none;justify-content: flex-start;align-items: center;flex-direction:column;text-align: center;padding-bottom: 25px;font-size: 14px;padding-top: 25px;
+            .mobile-top{margin-bottom: 25px;}
+            .mobile-middle{margin-bottom: 25px;
+                p{margin: 0 0 5px 0;
+                    span{font-weight: 700;}
+                }
+            }
+            .mobile-footer{
+                a{font-size: 30px;color:#000;text-decoration: none;font-weight: 600;transition:color 300ms ease;
+                    &:hover{color:#2b81da;}
+                }
+            }
+        }
 
     }
 
