@@ -96,6 +96,7 @@ input, textarea{
 }
 
 @include font-face('Muller', 'Muller-Regular');
+@include font-face('Muller', 'MullerLight', 300);
 @include font-face('Museo', 'MuseoSansCyrl-500', 500);
 @include font-face('Museo', 'MuseoSansCyrl-700', 700);
 @include font-face('Museo', 'MuseoSansCyrl-900', 900);
