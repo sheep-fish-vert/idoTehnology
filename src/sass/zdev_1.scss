@@ -10,12 +10,12 @@
 
     .ctext{
         h6, h5, h4, h3, h2, h1{color:#000;margin: 0 0 20px 0;}
-        h1{font-size: 72px;}
-        h2{font-size: 60px;}
-        h3{font-size: 48px;}
-        h4{font-size: 36px;}
-        h5{font-size: 24px;}
-        h6{font-size: 18px;}
+        h1{font-size: 62px;}
+        h2{font-size: 40px;}
+        h3{font-size: 38px;}
+        h4{font-size: 30px;}
+        h5{font-size: 22px;}
+        h6{font-size: 16px;}
         p{font-size: 14px;color:#000;line-height: 1.75;}
     }
 
@@ -103,8 +103,10 @@
 
 /* about-company */
 
-    .about-company{background-color:#f6f6f6;padding: 90px 0 20px 0;
-        .about-company-text{max-width: 770px;width: 100%;margin: 0 auto 60px auto;}
+    .about-company{background-color:#f6f6f6;padding: 110px 0 20px 0;
+        .about-company-text{max-width: 780px;width: 100%;margin: 0 auto 70px auto;
+            h2{font-weight: 900; margin: 0 0 40px 0;  }
+        }
     }
 
     .line-slider{display: flex;justify-content: space-around;align-items: center;flex-wrap:wrap;
