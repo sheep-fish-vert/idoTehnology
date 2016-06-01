@@ -8,13 +8,20 @@
 		.biznes-slider{display: flex; justify-content: flex-end;
 			.slide{border: 1px solid #e9e9e9; margin: 0 20px 0 0;
 				.images-for-slider{text-align: center;padding: 40px 0 0 0 ;
-					svg{}
+					svg{
+						.cls-1{fill:#2b80d9;}
+					}
 				}
 				.text-content{padding: 0 20px 40px 20px; max-width: 250px; margin: 0 auto; 
 					p{text-align: center;}
 				}
 			}
 		}
-		.it-man-image{position: absolute; display: block;left: -400px; top: 100px;}
+		.wrapper-for-button{ display: flex; justify-content: flex-end; padding: 40px 0;
+			.button{
+				span{}
+			}
+		}
+		.it-man-image{position: absolute; display: block;left: -250px; top: 100px;}
 	}
 }
