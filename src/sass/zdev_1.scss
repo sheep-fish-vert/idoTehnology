@@ -1,7 +1,7 @@
 /* button */
 
     .button{display: inline-block;height: 40px;line-height: 40px;font-weight: 700;color:#fff;text-align: center;background-color: #2b3bda;max-width: 165px;width: 100%;border-radius:50px;text-decoration: none;text-transform: uppercase;font-size: 13px;transition:background-color 300ms ease;
-        &:hover{background-color: #000;}
+        &:hover{background-color: #1d2bb3;}
     }
 
 /* /button */
@@ -23,8 +23,8 @@
 
 /* footer */
 
-    .footer{padding-top: 20px; padding-bottom: 65px;
-        
+    .footer{padding-top: 20px; padding-bottom: 45px;
+        .mbox{padding: 0;}
         ul{padding:0;margin:0;list-style:none;
             li{margin-bottom: 10px;
                 &:last-child{margin-bottom: 0;}
@@ -37,25 +37,27 @@
 
         .footer-wrap{position: relative;display: flex;justify-content: space-between;align-items: flex-start;padding-top: 0px;padding-bottom: 0px;
             .column{width: 25%;padding-right: 15px;padding-left:12px; 
+                .column-list{margin-top: 30px;}
                 &:last-child{padding-right: 0px;text-align: right;}
-                &>.column-list>ul>li{margin-top: 30px;
-                    &:last-child{margin-top: 0px;}
-                    &:nth-child(2){margin-top: 20px;}
-                    &:nth-child(3){margin-top: 20px;}
+                &>.column-list>ul>li{margin-top: 15px; margin-bottom: 0px;
+                    // &:last-child{margin-top: 0px;}
+                    // &:first-child{margin-top: px;}
+                    // &:nth-child(2){margin-top: 20px;}
+                    // &:nth-child(3){margin-top: 20px;}
                 }
             }
 
-            .company-name{font-size: 14px;color:#9a9a9a;margin-bottom: 25px;  padding-top: 2px;}
-            .column-title{font-family:'Muller', sans-serif;font-size: 30px;color:#000;margin-bottom: 25px;margin-top: -10px;  padding-top: 2px;}
+            .company-name{font-size: 14px;color:#9a9a9a;margin-bottom: 32px;  padding-top: 2px;}
+            .column-title{font-family:'Muller', sans-serif;font-size: 30px;color:#000;margin-bottom: 20px;margin-top: -10px;  padding-top: 2px;}
 
-            .footer-contact{
-                .footer-contact-telefone-wrap{margin-bottom: 30px;margin-top: -10px;}
+            .footer-contact{ padding-right: 20px;
+                .footer-contact-telefone-wrap{margin-bottom: 20px;margin-top: -5px; }
                 .footer-contact-telefone{font-weight: 700;color:#2b81da;font-size: 24px;text-decoration: none;margin-bottom: 20px;transition:color 300ms ease;
                     &:hover{color:#000;}
                 }
             }
 
-            .footer-logo{position: absolute;bottom: 20px;right: 0;width: 25%;
+            .footer-logo{position: absolute;bottom: 0px;right: 10px;width: 25%;
                 a{display: flex;justify-content: flex-end;align-items: center;text-decoration: none;
                     &:hover{
                         .footer-logo-svg{
@@ -109,13 +111,14 @@
 /* about-company */
 
     .about-company{background-color:#f6f6f6;padding: 110px 0 20px 0;
-        .about-company-text{max-width: 780px;width: 100%;margin: 0 auto 70px auto;
-            h2{font-weight: 900; margin: 0 0 40px 0;  }
+        .about-company-text{max-width: 780px;width: 100%;margin: 9px auto 70px auto;
+            h2{font-weight: 900; margin: 0 0 40px 0;  letter-spacing: -0.9px; }
+            p{ }
         }
     }
 
-    .line-slider{display: flex;justify-content: space-around;align-items: center;flex-wrap:wrap;
-        .line-item{padding:0 5px;margin-bottom: 20px;}
+    .line-slider{display: flex;justify-content: space-between;align-items: center;flex-wrap:wrap;margin-left: -20px;
+        .line-item{padding:0 15px;margin-bottom: 20px;}
         .line-item-wrap{display: flex;align-items: center;justify-content: center;
             .line-img{margin-right: 10px;}
             .line-text{text-transform: uppercase;font-weight: 600;max-width: 205px;width: 100%;line-height: 1.25;}
