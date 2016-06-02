@@ -37,12 +37,17 @@
 
         .footer-wrap{position: relative;display: flex;justify-content: space-between;align-items: flex-start;padding-top: 0px;padding-bottom: 0px;
             .column{width: 25%;padding-right: 15px;padding-left:12px; 
+                &:nth-child(2){
+                    .column-list{padding-right: 0px; 
+                        
+                    }
+                }
                 .column-list{margin-top: 30px;}
                 &:last-child{padding-right: 0px;text-align: right;}
                 &>.column-list>ul>li{margin-top: 15px; margin-bottom: 0px;
                     // &:last-child{margin-top: 0px;}
-                    // &:first-child{margin-top: px;}
-                    // &:nth-child(2){margin-top: 20px;}
+                     &:first-child{margin-top: 10px;}
+                     //&:nth-child(2){margin-top: 10px;}
                     // &:nth-child(3){margin-top: 20px;}
                 }
             }
@@ -110,7 +115,7 @@
 
 /* about-company */
 
-    .about-company{background-color:#f6f6f6;padding: 110px 0 20px 0;
+    .about-company{background-color:#f6f6f6;padding: 100px 0 20px 0;
         .about-company-text{max-width: 780px;width: 100%;margin: 9px auto 70px auto;
             h2{font-weight: 900; margin: 0 0 40px 0;  letter-spacing: -0.9px; }
             p{ }
