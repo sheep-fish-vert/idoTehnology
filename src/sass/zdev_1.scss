@@ -23,8 +23,8 @@
 
 /* footer */
 
-    .footer{
-
+    .footer{padding-top: 20px; padding-bottom: 65px;
+        
         ul{padding:0;margin:0;list-style:none;
             li{margin-bottom: 10px;
                 &:last-child{margin-bottom: 0;}
@@ -35,16 +35,21 @@
             ul{padding: 15px 0 5px 20px;}
         }
 
-        .footer-wrap{position: relative;display: flex;justify-content: space-between;align-items: flex-start;padding-top: 10px;padding-bottom: 20px;
-            .column{width: 25%;padding-right: 15px;
+        .footer-wrap{position: relative;display: flex;justify-content: space-between;align-items: flex-start;padding-top: 0px;padding-bottom: 0px;
+            .column{width: 25%;padding-right: 15px;padding-left:12px; 
                 &:last-child{padding-right: 0px;text-align: right;}
+                &>.column-list>ul>li{margin-top: 30px;
+                    &:last-child{margin-top: 0px;}
+                    &:nth-child(2){margin-top: 20px;}
+                    &:nth-child(3){margin-top: 20px;}
+                }
             }
 
-            .company-name{font-size: 14px;color:#9a9a9a;margin-bottom: 25px;}
-            .column-title{font-family:'Muller', sans-serif;font-size: 30px;color:#000;margin-bottom: 25px;margin-top: -10px;}
+            .company-name{font-size: 14px;color:#9a9a9a;margin-bottom: 25px;  padding-top: 2px;}
+            .column-title{font-family:'Muller', sans-serif;font-size: 30px;color:#000;margin-bottom: 25px;margin-top: -10px;  padding-top: 2px;}
 
             .footer-contact{
-                .footer-contact-telefone-wrap{margin-bottom: 10px;margin-top: -10px;}
+                .footer-contact-telefone-wrap{margin-bottom: 30px;margin-top: -10px;}
                 .footer-contact-telefone{font-weight: 700;color:#2b81da;font-size: 24px;text-decoration: none;margin-bottom: 20px;transition:color 300ms ease;
                     &:hover{color:#000;}
                 }

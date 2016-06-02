@@ -6,7 +6,7 @@
     .conteiner{ width: 100%;
         &.mobile-sd{display: none;}
         &.desktop-cd {display: block;}
-        .item{padding: 10px; width: 50%; float: left; 
+        .item{padding: 20px 0px 0px 15px; width: 50%; float: left; 
             .contein{position: relative;overflow: hidden; display: block;
                 .conv img{ transform: scale(1); transition: all 0.3s; }
                 .titl{position: absolute; bottom: 30px; left: 30px; right: 30px; font-size: 24px; font-family: "MuseoSans", sans-serif; color: rgb(255, 255, 255); line-height: 1.2; text-align: left; font-weight: 500;}

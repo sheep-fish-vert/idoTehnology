@@ -49,6 +49,10 @@
 
 }
 @media screen and (max-width: 479px){
+    .interest_stat .title h2{line-height: 1.2; }
+    .interest_stat .conteiner.mobile-sd{margin-bottom: 10px;
+        .slick-dots{bottom: 40%;}
+    }
 
 }
 @media screen and (max-width: 320px){
