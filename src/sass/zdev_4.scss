@@ -25,16 +25,20 @@ header{background-color: #2b81da;position: relative;z-index: 84;
                             a{position: relative;justify-content: flex-start;padding-right: 5px;height: 58px;font-weight: 500;font-family: 'Museo';
                                 &:hover{
                                     span{color: #2b3bda;}
-                                    img:first-child{opacity: 0;}
-                                    img:nth-child(2){opacity: 1;}
+                                    svg:first-child{
+                                        .cls-1{fill: #2b3bda;}
+                                    }
+                                    // svg:nth-child(2){opacity: 1;}
                                 }
                             }
                             span{position: relative;font-size: 16px;color: #000000;transition:color ease-out .2s;text-transform: initial;
                                 &:first-child{margin-right: 14px;}
                             }
-                            img{height: 21px;width: 21px;object-fit: contain;transition:opacity ease-out .2s;}
-                            img:first-child{}
-                            img:nth-child(2){position: absolute;left: 0;top: 0px;opacity: 0;}
+                            svg{object-fit: contain;transition:opacity ease-out .2s;
+                                .cls-1{fill: #c7c7c7;}
+                            }
+                            svg:first-child{}
+                            // svg:nth-child(2){position: absolute;left: 0;top: 0px;opacity: 0;}
                         }
                     }
                 }
