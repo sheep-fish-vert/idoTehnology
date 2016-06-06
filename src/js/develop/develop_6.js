@@ -26,7 +26,7 @@ $(document).ready(function(){
 	});
 	$('.home-slider').slick({
 		slidesToShow: 3,
-  		slidesToScroll: 1,
+  		slidesToScroll: 3,
   		arrows: false,
   		dots: true,
   		responsive: [

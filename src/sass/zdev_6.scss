@@ -5,7 +5,7 @@
 				span{color: #48fefc;}
 			}
 		}
-		.biznes-slider{display: flex; justify-content: flex-end; max-width: 915px; width: 100%; float: right;
+		.biznes-slider{display: flex; justify-content: flex-end; max-width: 900px; width: 100%; float: right;margin-right: 6px;
 			.slide{border: 1px solid #e9e9e9; margin: 0 0 0 30px;transition: 0.5s; min-width: 270px;min-height: 180px;max-height: 180px;
 				&:nth-child(1){
 					.images-for-slider{padding: 45px 0 0 0 ;}
@@ -32,8 +32,10 @@
 						.cls-1{fill:#2b80d9;}
 					}
 				}
-				.text-content{padding: 0 40px 30px 40px; max-width: 250px; margin: 0 auto; 
-					p{text-align: center; line-height: 1.2; font-weight: bold; margin-top: 15px; }
+				.text-content{padding: 0 40px 30px 40px; max-width: 260px; margin: 0 auto; 
+					&.ctext{
+						p{text-align: center; line-height: 1.35; font-weight: 700; margin-top: 10px; font-family: 'Museo'; font-size: 18px;letter-spacing: 0.1px;}
+					}
 				}
 			}
 			.slick-dots{bottom: 200px; left: 0px; text-align: right;
@@ -53,7 +55,7 @@
 				}
 			}
 		}
-		.wrapper-for-button{ display: flex; justify-content: flex-end; padding: 10px 0  35px 0; clear: both; position: relative; z-index: 1;
+		.wrapper-for-button{ display: flex; justify-content: flex-end; padding: 13px 7px  35px 0; clear: both; position: relative; z-index: 1;
 			.button{
 				span{}
 			}
@@ -71,14 +73,17 @@
 				span{color: #48fefc;}
 			}
 		}
-		.home-slider{display: flex; justify-content: flex-start; max-width: 915px; float: left; position: relative; z-index: 1; width: 100%;
-			.slide{border: 1px solid #e9e9e9; margin: 0 40px 0 0;background: #fff; border:3px solid transparent; transition: 0.5s; min-width: 265px;  min-height: 180px;max-height: 180px;
+		.home-slider{display: flex; justify-content: flex-start; max-width: 900px; float: left; position: relative; z-index: 1; width: 100%;
+			.slide{border: 1px solid #e9e9e9; margin: 0 30px 0 0;background: #fff; border:3px solid transparent; transition: 0.5s; min-width: 270px;  min-height: 180px;max-height: 180px;
 				// &:nth-child(3){margin: 0 0 0 0;}
-				&:hover{ background: transparent; border:3px solid #2b3bda;
+				&:hover{ background: #2b3bda; 
 					.images-for-slider{
 						svg{
 							.cls-1{fill:#fff;}
 						}
+					}
+					.text-content{color: white;
+						
 					}
 				}
 				.images-for-slider{text-align: center;padding: 45px 0 0 0 ;
@@ -87,10 +92,12 @@
 					}
 				}
 				.text-content{padding: 0px 15px 25px 15px; max-width: 250px; margin: 0 auto; 
-					p{text-align: center;min-height: 32px; line-height: 1.5; margin-top: 8px; letter-spacing: 0.6px;}
+					&.ctext{
+						p{ line-height: 1.333; margin-top:9px; letter-spacing: 0.1px; font-family: 'Museo'; font-size: 18px; }
+					}
 				}
 			}
-			.slick-dots{bottom: 205px; left: 0px; text-align: right;
+			.slick-dots{bottom: 203px; left: -25px; text-align: right;
 				li{ margin: 0;
 					button{
 						&:before{width: 12px; height: 12px;content: ''; border-radius: 50%;  border: 3px solid #47fbfb; background: transparent; opacity: 0.75;
