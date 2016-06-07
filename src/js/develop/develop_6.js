@@ -11,8 +11,8 @@ $(document).ready(function(){
   			{
   				breakpoint: 1024,
   				settings:{
-  					slidesToShow: 1,
-  					slidesToScroll: 1
+  					slidesToShow: 2,
+  					slidesToScroll: 2
   				}
   			},
   			{
@@ -33,8 +33,8 @@ $(document).ready(function(){
   			{
   				breakpoint: 1024,
   				settings:{
-  					slidesToShow: 1,
-  					slidesToScroll: 1
+  					slidesToShow: 2,
+  					slidesToScroll: 2
   				}
   			},
   			{
