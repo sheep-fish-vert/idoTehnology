@@ -94,6 +94,9 @@
 @media screen and (max-width: 666px){
 
 }
+@media screen and (max-width: 605px){
+    header .header-mobile-768-tel.header-tel a{font-size: 19px;}
+}
 @media screen and (max-width: 479px){
     /*header pravki*/
     header .header-mobile-768-logo{display: none;}
