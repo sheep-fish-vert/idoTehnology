@@ -10,6 +10,7 @@ function showHeaderMenu(){
     });
 
     $(document).on('click', '.header-mobile-tell-img', function(event) {
+        $(this).toggleClass('active');
         $('.header-mobile-tell-modal').toggleClass('active');
     });
 }
@@ -24,5 +25,8 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
-
+    if( $(window).width()>=479 ){
+        $('.header-mobile-tell-modal').removeClass('active');
+        $('.header-mobile-tell-img').removeClass('active');
+    }
 });

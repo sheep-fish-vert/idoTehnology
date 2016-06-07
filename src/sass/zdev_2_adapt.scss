@@ -29,11 +29,20 @@
     }
 }
 @media screen and (max-width: 992px){
+    .interest_stat { padding-bottom: 71px; background-color: #f6f6f6;}
+    .footer{padding-top: 55px;}
+
+    .interest_stat .conteiner .item .contein .titl {  position: absolute; bottom: 20px; left: 20px; font-weight: 500; font-size: 20px;}
 
 }
 @media screen and (max-width: 767px){
 
-    .interest_stat .conteiner.desktop-cd { display: none;}
+
+
+}
+@media screen and (max-width: 560px){
+
+        .interest_stat .conteiner.desktop-cd { display: none;}
     .interest_stat .conteiner.mobile-sd { display: block;
         .slick-dots { text-align: left;  bottom: 65%; width: auto;
             li{width: 10px; height: 10px; border-radius: 50%; border: 2px solid #46f7f5; transition: all 0.3s;
@@ -58,9 +67,6 @@
             .titl{font-size: 20px;}
         }
     }
-
-}
-@media screen and (max-width: 560px){
     .footer .footer-wrap-mobile { padding-top: 10px;
         .foo-menu {display: none;}
     }

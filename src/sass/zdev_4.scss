@@ -53,11 +53,13 @@ header{background-color: #2b81da;position: relative;z-index: 84;
             a{text-transform: uppercase;color: white;text-decoration: none;font-size: 24px; font-weight :700;  }
             a.button-line{font-size: 13px;margin-bottom: 30px;margin-top: 5px; font-weight: 600;  }
             a:last-child{font-family:'Museo';
-                
+
             }
         }
     }
     .header-mobile{display: none;}
+    .header-mobile-768-logo{display: none;}
+    .header-mobile-768-tel.header-tel{display: none;}
 }
 
 .button-line{
