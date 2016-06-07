@@ -1,27 +1,126 @@
 .slider-biznes{
-	.mbox{display: relative;
-		.biznes-heading{text-transform: uppercase; font-family: 'Museo'; font-weight: 900; font-size: 60px;
-			h2{color:#2b3bda;  text-align: center;
+	.mbox{display: relative;padding: 0 10px;
+		.biznes-heading{text-transform: uppercase; font-family: 'Museo'; padding: 50px 150px 0 0;
+			h2{color:#2b3bda;  text-align: center;font-weight: 900; font-size: 60px; margin: 50px 0 35px 0;
 				span{color: #48fefc;}
 			}
 		}
-		.biznes-slider{display: flex; justify-content: flex-end;
-			.slide{border: 1px solid #e9e9e9; margin: 0 20px 0 0;
-				.images-for-slider{text-align: center;padding: 40px 0 0 0 ;
+		.biznes-slider{display: flex; justify-content: flex-end; max-width: 900px; width: 100%; float: right;margin-right: 6px;
+			.slide{border: 1px solid #e9e9e9; margin: 0 0 0 30px;transition: 0.5s; min-width: 270px;min-height: 180px;max-height: 180px;
+				&:nth-child(1){
+					.images-for-slider{padding: 45px 0 0 0 ;}
+				}
+				&:nth-child(3){
+					.images-for-slider{padding: 47px 0 0 0 ; }
+					.text-content{
+						p{padding: 0 5px;}
+					}
+				}
+				&:hover{ background-color: #2b3bda;
+					.images-for-slider{
+						svg{
+							.cls-1{fill:#fff;}
+						}
+					}
+					.text-content{
+						p{color: #fff;}
+					}
+				}
+				
+				.images-for-slider{text-align: center;padding: 45px 0 0 0 ;
 					svg{
 						.cls-1{fill:#2b80d9;}
 					}
 				}
-				.text-content{padding: 0 20px 40px 20px; max-width: 250px; margin: 0 auto; 
-					p{text-align: center;}
+				.text-content{padding: 0 40px 30px 40px; max-width: 260px; margin: 0 auto; 
+					&.ctext{
+						p{text-align: center; line-height: 1.35; font-weight: 700; margin-top: 10px; font-family: 'Museo'; font-size: 18px;letter-spacing: 0.1px;}
+					}
+				}
+			}
+			.slick-dots{bottom: 200px; left: 0px; text-align: right;
+				li{
+					button{
+						&:before{width: 15px; height: 15px;content: ''; border-radius: 50%;  border: 3px solid #2b81da; background: transparent; opacity: 0.75;
+							
+						}
+					}
+				}
+				.slick-active{
+					button{
+						&:before{  background: #2b81da;
+							
+						}
+					}
 				}
 			}
 		}
-		.wrapper-for-button{ display: flex; justify-content: flex-end; padding: 40px 0;
+		.wrapper-for-button{ display: flex; justify-content: flex-end; padding: 13px 7px  35px 0; clear: both; position: relative; z-index: 1;
 			.button{
 				span{}
 			}
 		}
-		.it-man-image{position: absolute; display: block;left: -250px; top: 100px;}
+		.it-man-image{position: absolute; display: block;left: -250px; top: 135px; pointer-events: none;
+			max-width:740px ; max-height:447px ;
+		}
 	}
 }
+
+.slider-home{background-color:#2b81da;
+	.mbox{display: relative;
+		.home-heading{text-transform: uppercase; font-family: 'Museo';padding-top: 55px;
+			h2{color:#fff;  text-align: left;margin-top: 0px; font-size: 60px; margin-bottom: 35px;font-weight: 900;
+				span{color: #48fefc;}
+			}
+		}
+		.home-slider{display: flex; justify-content: flex-start; max-width: 900px; float: left; position: relative; z-index: 1; width: 100%;
+			.slide{border: 1px solid #e9e9e9; margin: 0 30px 0 0;background: #fff; border:3px solid transparent; transition: 0.5s; min-width: 270px;  min-height: 180px;max-height: 180px;
+				// &:nth-child(3){margin: 0 0 0 0;}
+				&:hover{ background: #2b3bda; 
+					.images-for-slider{
+						svg{
+							.cls-1{fill:#fff;}
+						}
+					}
+					.text-content{color: white;
+						
+					}
+				}
+				.images-for-slider{text-align: center;padding: 45px 0 0 0 ;
+					svg{
+						.cls-1{fill:#2b80d9;}
+					}
+				}
+				.text-content{padding: 0px 15px 25px 15px; max-width: 250px; margin: 0 auto; 
+					&.ctext{
+						p{ line-height: 1.333; margin-top:9px; letter-spacing: 0.1px; font-family: 'Museo'; font-size: 18px; }
+					}
+				}
+			}
+			.slick-dots{bottom: 203px; left: -25px; text-align: right;
+				li{ margin: 0;
+					button{
+						&:before{width: 12px; height: 12px;content: ''; border-radius: 50%;  border: 3px solid #47fbfb; background: transparent; opacity: 0.75;
+							
+						}
+					}
+				}
+				.slick-active{
+					button{
+						&:before{  background: #fff; border: 3px solid #fff;
+							
+						}
+					}
+				}
+			}
+		}
+		.wrapper-for-button{ display: flex; justify-content: flex-start; padding: 10px 0  40px 0px; clear: both; position: relative; z-index: 1; 
+			.button{max-width: 220px;
+				span{}
+			}
+		}
+		.it-woman-image{position: absolute; display: block; right: -70px; top: 70px; pointer-events: none;}
+	}
+}
+
+

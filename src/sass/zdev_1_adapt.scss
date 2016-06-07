@@ -61,6 +61,27 @@
 
 }
 @media screen and (max-width: 479px){
+    .about-company{padding: 40px 0 0px 0;
+        .mbox{ padding: 0 10px;}
+    }
+    .about-company .about-company-text{margin: 0 auto 35px auto;
+        h2{margin: 0 0 20px 0;
+        }
+        p{line-height: 1.45;}
+    }
+
+    .footer{padding-top: 0px;
+        .footer-wrap-mobile { padding-top: 0;
+            .mobile-footer {margin-bottom: 10px;
+                a {font-size :20px;
+                }  
+            }
+            .mobile-middle{margin-bottom: 25px;
+                
+            }
+        }
+    }
+    
 
 }
 @media screen and (max-width: 320px){
