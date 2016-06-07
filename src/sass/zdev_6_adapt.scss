@@ -147,19 +147,19 @@
 					span{}
 				}
 			}
-			.it-woman-image{
+			.it-woman-image{right: -30px;
 			}
 		}
 	}
 	.slider-biznes{
-		.mbox{
-			.biznes-heading{
+		.mbox{padding: 0 110px;
+			.biznes-heading{  padding: 50px 0px 0px 50px;
 				h2{
 					span{
 					}
 				}
 			}
-			.biznes-slider{ 
+			.biznes-slider{ max-width: 600px;
 				.slide{ margin: 0 0 0 30px;
 					.images-for-slider{
 						svg{

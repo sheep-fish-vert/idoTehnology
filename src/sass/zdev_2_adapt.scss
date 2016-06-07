@@ -11,8 +11,22 @@
 
 }
 @media screen and (max-width: 1024px){
-    .line-slider{flex-wrap: wrap; justify-content: space-around;}
+    .line-slider{flex-wrap: wrap; justify-content: space-around; max-width: 600px; margin: 0 auto; padding: 0 15px 0 0;
+        .line-item:nth-child(1),.line-item:nth-child(2){margin-bottom: 60px;}
+         .line-item:nth-child(3),.line-item:nth-child(4){margin-bottom: 10px;}
+    }
+    .interest_stat{
 
+        .title{
+            h2{ padding-bottom: 30px;}
+        }
+        .interest_stat .conteiner .item{
+            
+        }
+    }
+    .interest_stat .conteiner .item {padding: 15px 0px 10px 20px; width: 49%;
+        .contein .titl{font-size:20px;}
+    }
 }
 @media screen and (max-width: 992px){
 
