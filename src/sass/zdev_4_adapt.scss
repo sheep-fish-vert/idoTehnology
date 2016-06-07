@@ -37,7 +37,7 @@
                 a{text-decoration: none;color:#2b81da;font-size: 22px; margin-bottom: 10px;display: inline-block;}
                 a.button{margin-bottom: 0;color: #fff;font-size: 13px;}
             }
-
+            .header-mobile-logo svg{height: 100%;width: 100%;max-width: 128px;}
             .header-mobile-navigation{position: absolute;z-index: 3;right: 100%;background-color: #2b81da;color:#fff;padding: 27px 31px;font-family: 'Muller';width: 100%;transition:right ease-out .2s;font-weight: 300;
                 &.active{right: 0;}
                 &:after{position: absolute;width: 100%;height: 112px;top: 0;left: 0;pointer-events:none;background-color: #125dab;content: '';}
