@@ -349,8 +349,8 @@
 	}
 	.slider-home{
 		.mbox{
-			.home-heading{
-				h2{font-size: 55px; margin-bottom: 45px;
+			.home-heading{padding-top: 40px;
+				h2{font-size: 55px; margin-bottom: 45px; 
 					span{
 					} 
 				}
@@ -368,8 +368,8 @@
 						}
 					}
 				}
-				.slick-dots{
-					li{
+				.slick-dots{bottom: 183px; left: -10px;
+					li{margin: 0 10px;
 						button{
 							&:before{
 								
@@ -398,15 +398,15 @@
 @media screen and (max-width: 680px){
 	.slider-biznes{
 		.mbox{
-			.biznes-heading{
-				h2{ font-size:30px; text-align: center;
+			.biznes-heading{padding-top: 30px;
+				h2{ font-size:30px; text-align: center; padding:0; margin-bottom: 20px;
 					span{
 					}
 				}
 			}
-			.biznes-slider{ max-width: 60%; 
-				.slide{
-					.images-for-slider{
+			.biznes-slider{ max-width: 290px; float: none; margin: 0 auto 30px;
+				.slide{max-width: 290px; min-height: 165px;max-height: 165px; margin: 0;
+					.images-for-slider{padding: 35px 0 0 0 ;
 						svg{
 							.cls-1{
 							}
@@ -417,10 +417,10 @@
 						}
 					}
 				}
-				.slick-dots{
-					li{
-						button{
-							&:before{
+				.slick-dots{bottom: -50px; z-index: 5; 
+					li{margin: 0;
+						button{max-width: 12px; max-height: 12px;
+							&:before{max-width: 12px; max-height: 12px;
 								
 							}
 						}
@@ -434,12 +434,12 @@
 					}
 				}
 			}
-			.wrapper-for-button{ padding: 150px 0  25px 0;
+			.wrapper-for-button{ clear: both; position: relative; z-index: 3; justify-content: center;    padding: 120px 0 10px 0px;
 				.button{
 					span{}
 				}
 			}
-			.it-man-image{top: 350px;
+			.it-man-image{left: 80px; top: 270px; max-width: 378px; max-height: 340px; z-index:1;
 			}
 		}
 	}
@@ -451,9 +451,9 @@
 					} 
 				}
 			}
-			.home-slider{ max-width: 320px; float: none; margin: 0 auto;
-				.slide{max-width: 290px; min-height: 165px;max-height: 165px;
-					.images-for-slider{
+			.home-slider{ max-width: 290px; float: none; margin: 0 auto 30px;
+				.slide{max-width: 290px; min-height: 165px;max-height: 165px; margin: 0;
+					.images-for-slider{padding: 25px 0 0 0;
 						svg{
 							.cls-1{
 							}
@@ -464,8 +464,8 @@
 						}
 					}
 				}
-				.slick-dots{bottom: -50px;
-					li{
+				.slick-dots{bottom: -50px; z-index: 5; 
+					li{margin: 0;
 						button{
 							&:before{
 								
@@ -481,12 +481,12 @@
 					}
 				}
 			}
-			.wrapper-for-button{   clear: both; position: relative; z-index: 3; justify-content: center;    padding: 140px 0 10px 0px; 
+			.wrapper-for-button{   clear: both; position: relative; z-index: 3; justify-content: center;    padding: 110px 0 10px 0px;
 				.button{
 					span{}
 				}
 			}
-			.it-woman-image{ right: 130px; top: 250px; max-width: 288px; max-height: 250px; z-index:1;
+			.it-woman-image{ right: 220px; top: 250px; max-width: 288px; max-height: 250px; z-index:1;
 			}
 		}
 	}
