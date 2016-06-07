@@ -15,13 +15,13 @@ $(document).ready(function(){
   					slidesToScroll: 2
   				}
   			},
-  			{
-  				breakpoint: 900,
-  				settings:{
-  					slidesToShow: 1,
-  					slidesToScroll: 1
-  				}
-  			}
+  			// {
+  			// 	breakpoint: 900,
+  			// 	settings:{
+  			// 		slidesToShow: 1,
+  			// 		slidesToScroll: 1
+  			// 	}
+  			// }
   		]
 	});
 	$('.home-slider').slick({
@@ -37,13 +37,13 @@ $(document).ready(function(){
   					slidesToScroll: 2
   				}
   			},
-  			{
-  				breakpoint: 950,
-  				settings:{
-  					slidesToShow: 1,
-  					slidesToScroll: 1
-  				}
-  			}
+  			// {
+  				// breakpoint: 950,
+  				// settings:{
+  				// 	slidesToShow: 1,
+  				// 	slidesToScroll: 1
+  				// }
+  			// }
   		]
 	});
 });
