@@ -15,8 +15,13 @@
         .header-tel{flex-direction: row; position: absolute; top: 0; right: 0;
            a{margin: 18px 0px 0px 0px;}
            a.button-line{order: 1; margin: 10px 0px 10px 40px;
-
            }
+        }
+        .navigation{
+            nav{ 
+                ul{  justify-content: space-between;
+                }
+            }
         }
     }
 }
@@ -25,11 +30,11 @@
         .header-tel{flex-direction: row; position: absolute; top: 0; right: 0;
            a{margin: 18px 0px 0px 0px;}
            a.button-line{order: 1; margin: 10px 0px 10px 40px;
-
            }
         }
+        
     }
-    header .header-desctop .navigation > nav > ul{align-items: stretch;}
+    
 }
 @media screen and (max-width: 992px){
     /*header*/

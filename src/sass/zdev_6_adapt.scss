@@ -103,7 +103,7 @@
 		}
 	}
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1124px){
 	.slider-home{
 		.mbox{
 			.home-heading{
@@ -401,7 +401,7 @@
 }
 @media screen and (max-width: 680px){
 	.slider-biznes{
-		.mbox{
+		.mbox{ padding: 0 10px 0 35px;
 			.biznes-heading{padding-top: 30px;
 				h2{ font-size:30px; text-align: center; padding:0; margin-bottom: 20px;
 					span{
@@ -422,9 +422,9 @@
 					}
 				}
 				.slick-dots{bottom: -50px; z-index: 5; 
-					li{margin: 0;
+					li{margin: -3px;
 						button{max-width: 12px; max-height: 12px;
-							&:before{max-width: 12px; max-height: 12px;
+							&:before{width: 8px; height: 8px; border: 2px solid #47fbfb;
 								
 							}
 						}
@@ -443,8 +443,8 @@
 					span{}
 				}
 			}
-			.image-wrapper-bizines{
-				.it-man-image{left: 80px; top: -220px; max-width: 378px; max-height: 340px; z-index:1;
+			.image-wrapper-bizines{max-width: 290px; margin: 0 auto;
+				.it-man-image{left: -100px; top: -220px; max-width: 378px; max-height: 340px; z-index:1;
 				}
 			}
 		}
@@ -470,10 +470,10 @@
 						}
 					}
 				}
-				.slick-dots{bottom: -50px; z-index: 5; 
+				.slick-dots{bottom: -50px; z-index: 5; left:10px;  
 					li{margin: 0;
 						button{
-							&:before{
+							&:before{width: 8px; height: 8px; border: 2px solid #47fbfb;
 								
 							}
 						}
@@ -492,113 +492,17 @@
 					span{}
 				}
 			}
-			.image-wrapper-home{
-				.it-woman-image{ left: 30px; top: -220px; max-width: 288px; max-height: 250px; z-index:1;
+			.image-wrapper-home{max-width: 290px; margin: 0 auto;
+				.it-woman-image{ left: 0px; top: -220px; max-width: 288px; max-height: 250px; z-index:1;
 				}
 			}
 		}
 	}
 }
-// @media screen and (max-width: 550px){
-// 	.slider-biznes{
-// 		.mbox{
-// 			.biznes-heading{
-// 				h2{font-size: 50px;
-// 					span{
-// 					}
-// 				}
-// 			}
-// 			.biznes-slider{ max-width: 80%; 
-// 				.slide{
-// 					.images-for-slider{
-// 						svg{
-// 							.cls-1{
-// 							}
-// 						}
-// 					}
-// 					.text-content{
-// 						p{
-// 						}
-// 					}
-// 				}
-// 				.slick-dots{
-// 					li{
-// 						button{
-// 							&:before{
-								
-// 							}
-// 						}
-// 					}
-// 					.slick-active{
-// 						button{
-// 							&:before{
-								
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 			.wrapper-for-button{ 
-// 				.button{
-// 					span{}
-// 				}
-// 			}
-// 			.it-man-image{
-// 			}
-// 		}
-// 	}
 
-// 	.slider-home{
-// 		.mbox{
-// 			.home-heading{
-// 				h2{
-// 					span{
-// 					}
-// 				}
-// 			}
-// 			.home-slider{ max-width: 90%;
-// 				.slide{
-// 					.images-for-slider{
-// 						svg{
-// 							.cls-1{
-// 							}
-// 						}
-// 					}
-// 					.text-content{
-// 						p{
-// 						}
-// 					}
-// 				}
-// 				.slick-dots{
-// 					li{
-// 						button{
-// 							&:before{
-								
-// 							}
-// 						}
-// 					}
-// 					.slick-active{
-// 						button{
-// 							&:before{
-								
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 			.wrapper-for-button{ padding: 260px 0  45px 0;
-// 				.button{
-// 					span{}
-// 				}
-// 			}
-// 			.it-woman-image{left: 5%;  z-index: 2;
-// 			}
-// 		}
-// 	}	
-// }
 @media screen and (max-width: 479px){
 	.slider-biznes{
-		.mbox{
+		.mbox{padding: 0 10px 0 10px;
 			.biznes-heading{padding: 30px 0 0  0;
 				h2{
 					span{
@@ -618,7 +522,7 @@
 						}
 					}
 				}
-				.slick-dots{
+				.slick-dots{left: 10px;
 					li{
 						button{
 							&:before{max-width: 10px; max-height: 10px;
