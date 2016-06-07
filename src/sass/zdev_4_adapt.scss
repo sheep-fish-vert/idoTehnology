@@ -83,7 +83,7 @@
             }
         }
         .header-mobile-768-logo{display: block;}
-        .header-mobile-768-tel.header-tel{display: block;
+        .header-mobile-768-tel.header-tel{display: block;margin-right: -14%;letter-spacing: 1px;
             a{text-transform: uppercase;color: white;text-decoration: none;font-size: 26px;}
         }
     }
@@ -92,7 +92,9 @@
 
 }
 @media screen and (max-width: 666px){
-
+    header .header-mobile-768-tel.header-tel {margin-right: 0%;letter-spacing: 0px;
+        a{font-size: 23px;}
+    }
 }
 @media screen and (max-width: 605px){
     header .header-mobile-768-tel.header-tel a{font-size: 19px;}
