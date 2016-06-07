@@ -147,19 +147,19 @@
 					span{}
 				}
 			}
-			.it-woman-image{
+			.it-woman-image{right: -30px;
 			}
 		}
 	}
 	.slider-biznes{
-		.mbox{
-			.biznes-heading{
+		.mbox{padding: 0 110px;
+			.biznes-heading{  padding: 50px 0px 0px 50px;
 				h2{
 					span{
 					}
 				}
 			}
-			.biznes-slider{ 
+			.biznes-slider{ max-width: 600px;
 				.slide{ margin: 0 0 0 30px;
 					.images-for-slider{
 						svg{
@@ -204,14 +204,14 @@
 }
 @media screen and (max-width: 900px){
 	.slider-biznes{
-		.mbox{
+		.mbox{padding: 0 10px;
 			.biznes-heading{
 				h2{
 					span{
 					}
 				}
 			}
-			.biznes-slider{ max-width: 50%;
+			.biznes-slider{
 				.slide{
 					.images-for-slider{
 						svg{
@@ -258,7 +258,7 @@
 					}
 				}
 			}
-			.home-slider{  max-width: 50%;
+			.home-slider{  
 				.slide{
 					.images-for-slider{
 						svg{
@@ -302,13 +302,13 @@
 @media screen and (max-width: 767px){
 	.slider-biznes{
 		.mbox{
-			.biznes-heading{padding: 50px 0px 0 0;
-				h2{font-size: 50px; margin: 60px 0;
+			.biznes-heading{
+				h2{font-size: 55px;padding: 0px 70px 5px 0px;
 					span{
 					}
 				}
 			}
-			.biznes-slider{ max-width: 60%; float: none; margin: 0 auto;
+			.biznes-slider{ 
 				.slide{
 					.images-for-slider{
 						svg{
@@ -338,24 +338,24 @@
 					}
 				}
 			}
-			.wrapper-for-button{ display: flex; justify-content: center; padding: 100px 0  25px 0; clear: both; position: relative; z-index: 1;
+			.wrapper-for-button{  
 				.button{
 					span{}
 				}
 			}
-			.it-man-image{left: -120px; top: 290px;max-width: 537px; max-height: 345px;
+			.it-man-image{left: -350px;
 			}
 		}
 	}
 	.slider-home{
 		.mbox{
 			.home-heading{
-				h2{font-size: 50px; margin: 0 0 60px 0; text-align: center;
+				h2{font-size: 55px; margin-bottom: 45px;
 					span{
-					}
+					} 
 				}
 			}
-			.home-slider{ max-width: 70%; float: none; margin: 0 auto;
+			.home-slider{ 
 				.slide{
 					.images-for-slider{
 						svg{
@@ -385,12 +385,12 @@
 					}
 				}
 			}
-			.wrapper-for-button{ display: flex; justify-content: center; padding: 260px 0  45px 0; clear: both; position: relative; z-index: 3; 
+			.wrapper-for-button{   clear: both; position: relative; z-index: 3; 
 				.button{
 					span{}
 				}
 			}
-			.it-woman-image{left: 10%; top: 310px; z-index: 2;
+			.it-woman-image{ right: -150px;
 			}
 		}
 	}

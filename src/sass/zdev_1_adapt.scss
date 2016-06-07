@@ -42,7 +42,15 @@
 
 }
 @media screen and (max-width: 767px){
-
+    .about-company{padding: 130px 0 20px 0;
+        .mbox{padding: 0 10px;
+            .about-company-text{margin: 9px auto 55px auto;
+                    h2 {
+                font-size: 40px;
+                }
+            }
+        }    
+    }
 }
 @media screen and (max-width: 666px){
 

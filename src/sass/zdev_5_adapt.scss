@@ -1,17 +1,18 @@
-@media screen and (max-width: 1920px){
+.show-on1024{ display: none;}
 
-}
-@media screen and (max-width: 1600px){
-
-}
-@media screen and (max-width: 1366px){
-
-}
-@media screen and (max-width: 1280px){
-
-}
 @media screen and (max-width: 1024px){
-
+    .show-on1024{ display: block;margin-top: 55px;
+        margin-left: 9px;}
+    .hide-on1024{ display: none;}
+    .footer{
+        .footer-wrap{ padding: 0 7px; justify-content: flex-start;
+            .column{width: 33%;
+                &.first{ width: 30%;}
+                &.second{ width: 29.5%;}
+            }
+            .footer-logo { right: auto;                left: -38px;}
+        }
+    }
 }
 @media screen and (max-width: 992px){
 
