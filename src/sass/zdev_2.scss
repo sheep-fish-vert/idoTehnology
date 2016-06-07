@@ -19,3 +19,28 @@
 }
 
 .line-img{width: 43px; height: 43px;}
+
+
+.footer .footer-wrap-mobile { padding: 0;}
+.footer-wrap-mobile{ 
+    .foo-menu{ width: 100%; max-width: 630px; margin: 0 auto; padding: 0 20px;
+        nav{ width: 100%; padding-bottom: 45px;
+            ul{ list-style: none; padding: 0; display: flex; align-items: center; justify-content: space-between; width: 100%;
+                li{margin: 0 !important;
+                    a{ text-decoration: underline; font-size: 22px; color: rgb(0, 0, 0); text-decoration: underline; font-weight: 400l; line-height: 1.364;}
+                }
+            }
+        }
+    }
+
+    .mobile-top{ font-size: 14px; font-family: "Open Sans", sans-serif; color: rgb(154, 154, 154); line-height: 1.429; margin-bottom: 14px !important;}
+    .mobile-middle{ font-size: 16px; font-family: "Open Sans"; color: rgb(34, 34, 34); line-height: 1.25; text-align: center; margin-bottom: 19px !important;}
+    .mobile-footer-2{ margin-bottom: 8px;
+        a{ font-size: 24px; font-weight: 700; font-family: "MuseoSans", sans-serif; color: rgb(43, 129, 218); text-transform: uppercase; line-height: 2; text-align: center; text-decoration: none; letter-spacing: 0.015em;}
+    }
+    .footer-contact-button{
+        a{width: 165px; margin: 0 auto; height: 39px;}
+    }
+
+}
+.footer .footer-wrap-mobile .mobile-middle p span {font-weight: 400 !important;}
