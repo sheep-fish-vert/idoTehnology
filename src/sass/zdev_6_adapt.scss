@@ -395,11 +395,11 @@
 		}
 	}
 }
-@media screen and (max-width: 666px){
+@media screen and (max-width: 680px){
 	.slider-biznes{
 		.mbox{
 			.biznes-heading{
-				h2{font-size: 50px;
+				h2{ font-size:30px; text-align: center;
 					span{
 					}
 				}
@@ -443,66 +443,16 @@
 			}
 		}
 	}
-}
-@media screen and (max-width: 550px){
-	.slider-biznes{
-		.mbox{
-			.biznes-heading{
-				h2{font-size: 50px;
-					span{
-					}
-				}
-			}
-			.biznes-slider{ max-width: 80%; 
-				.slide{
-					.images-for-slider{
-						svg{
-							.cls-1{
-							}
-						}
-					}
-					.text-content{
-						p{
-						}
-					}
-				}
-				.slick-dots{
-					li{
-						button{
-							&:before{
-								
-							}
-						}
-					}
-					.slick-active{
-						button{
-							&:before{
-								
-							}
-						}
-					}
-				}
-			}
-			.wrapper-for-button{ 
-				.button{
-					span{}
-				}
-			}
-			.it-man-image{
-			}
-		}
-	}
-
 	.slider-home{
-		.mbox{
+		.mbox{ padding: 0 10px 0 35px;
 			.home-heading{
-				h2{
+				h2{font-size: 30px; margin-bottom: 30px; text-align: center;
 					span{
-					}
+					} 
 				}
 			}
-			.home-slider{ max-width: 90%;
-				.slide{
+			.home-slider{ max-width: 320px; float: none; margin: 0 auto;
+				.slide{max-width: 290px; min-height: 165px;max-height: 165px;
 					.images-for-slider{
 						svg{
 							.cls-1{
@@ -514,7 +464,7 @@
 						}
 					}
 				}
-				.slick-dots{
+				.slick-dots{bottom: -50px;
 					li{
 						button{
 							&:before{
@@ -531,113 +481,210 @@
 					}
 				}
 			}
-			.wrapper-for-button{ padding: 260px 0  45px 0;
+			.wrapper-for-button{   clear: both; position: relative; z-index: 3; justify-content: center;    padding: 140px 0 10px 0px; 
 				.button{
 					span{}
 				}
 			}
-			.it-woman-image{left: 5%;  z-index: 2;
-			}
-		}
-	}	
-}
-@media screen and (max-width: 479px){
-	.slider-biznes{
-		.mbox{
-			.biznes-heading{
-				h2{font-size: 32px; margin-top: 15px; margin-bottom: 30px;
-					span{
-					}
-				}
-			}
-			.biznes-slider{ max-width: 100%; 
-				.slide{ min-width: 230px; min-height: 200px;margin: 0 5px!important;
-					.images-for-slider{
-						svg{
-							.cls-1{
-							}
-						}
-					}
-					.text-content{
-						p{font-size: 16px; line-height: 1.4;
-						}
-					}
-				}
-				.slick-dots{bottom: -40px; 
-					li{margin: 0;
-						button{
-							&:before{width: 10px; height: 10px;
-								
-							}
-						}
-					}
-					.slick-active{
-						button{
-							&:before{
-								
-							}
-						}
-					}
-				}
-			}
-			.wrapper-for-button{ margin-top:15px; padding-top: 120px;
-				.button{
-					span{}
-				}
-			}
-			.it-man-image{ top: 280px; max-width: 400px; max-height: 250px; left: -100px;
+			.it-woman-image{ right: 130px; top: 250px; max-width: 288px; max-height: 250px; z-index:1;
 			}
 		}
 	}
-
-	.slider-home{
-		.mbox{
-			.home-heading{ padding: 10px 0px 0px 0px;
-				h2{font-size: 32px; margin-bottom: 30px;
-					span{
-					}
-				}
-			}
-			.home-slider{ max-width: 100%;
-				.slide{min-width: 240px; margin: 0 5px; min-height: 180px;
-					.images-for-slider{
-						svg{
-							.cls-1{
-							}
-						}
-					}
-					.text-content{padding: 0 20px 20px 20px;
-						p{
-						}
-					}
-				}
-				.slick-dots{bottom: -50px; 
-					li{margin: 0;
-						button{
-							&:before{width: 10px; height: 10px;
-								
-							}
-						}
-					}
-					.slick-active{
-						button{
-							&:before{
-								
-							}
-						}
-					}
-				}
-			}
-			.wrapper-for-button{ padding: 120px 0  20px 0; margin-top: 20px;
-				.button{
-					span{}
-				}
-			}
-			.it-woman-image{left: 12%; top: 243px; z-index: 2; max-width: 289px; max-height: 236px; pointer-events: none;
-			}
-		}
-	}	
 }
+// @media screen and (max-width: 550px){
+// 	.slider-biznes{
+// 		.mbox{
+// 			.biznes-heading{
+// 				h2{font-size: 50px;
+// 					span{
+// 					}
+// 				}
+// 			}
+// 			.biznes-slider{ max-width: 80%; 
+// 				.slide{
+// 					.images-for-slider{
+// 						svg{
+// 							.cls-1{
+// 							}
+// 						}
+// 					}
+// 					.text-content{
+// 						p{
+// 						}
+// 					}
+// 				}
+// 				.slick-dots{
+// 					li{
+// 						button{
+// 							&:before{
+								
+// 							}
+// 						}
+// 					}
+// 					.slick-active{
+// 						button{
+// 							&:before{
+								
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 			.wrapper-for-button{ 
+// 				.button{
+// 					span{}
+// 				}
+// 			}
+// 			.it-man-image{
+// 			}
+// 		}
+// 	}
+
+// 	.slider-home{
+// 		.mbox{
+// 			.home-heading{
+// 				h2{
+// 					span{
+// 					}
+// 				}
+// 			}
+// 			.home-slider{ max-width: 90%;
+// 				.slide{
+// 					.images-for-slider{
+// 						svg{
+// 							.cls-1{
+// 							}
+// 						}
+// 					}
+// 					.text-content{
+// 						p{
+// 						}
+// 					}
+// 				}
+// 				.slick-dots{
+// 					li{
+// 						button{
+// 							&:before{
+								
+// 							}
+// 						}
+// 					}
+// 					.slick-active{
+// 						button{
+// 							&:before{
+								
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 			.wrapper-for-button{ padding: 260px 0  45px 0;
+// 				.button{
+// 					span{}
+// 				}
+// 			}
+// 			.it-woman-image{left: 5%;  z-index: 2;
+// 			}
+// 		}
+// 	}	
+// }
+// @media screen and (max-width: 479px){
+// 	.slider-biznes{
+// 		.mbox{
+// 			.biznes-heading{
+// 				h2{font-size: 32px; margin-top: 15px; margin-bottom: 30px;
+// 					span{
+// 					}
+// 				}
+// 			}
+// 			.biznes-slider{ max-width: 100%; 
+// 				.slide{ min-width: 230px; min-height: 200px;margin: 0 5px!important;
+// 					.images-for-slider{
+// 						svg{
+// 							.cls-1{
+// 							}
+// 						}
+// 					}
+// 					.text-content{
+// 						p{font-size: 16px; line-height: 1.4;
+// 						}
+// 					}
+// 				}
+// 				.slick-dots{bottom: -40px; 
+// 					li{margin: 0;
+// 						button{
+// 							&:before{width: 10px; height: 10px;
+								
+// 							}
+// 						}
+// 					}
+// 					.slick-active{
+// 						button{
+// 							&:before{
+								
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 			.wrapper-for-button{ margin-top:15px; padding-top: 120px;
+// 				.button{
+// 					span{}
+// 				}
+// 			}
+// 			.it-man-image{ top: 280px; max-width: 400px; max-height: 250px; left: -100px;
+// 			}
+// 		}
+// 	}
+
+// 	.slider-home{
+// 		.mbox{
+// 			.home-heading{ padding: 10px 0px 0px 0px;
+// 				h2{font-size: 32px; margin-bottom: 30px;
+// 					span{
+// 					}
+// 				}
+// 			}
+// 			.home-slider{ max-width: 100%;
+// 				.slide{min-width: 240px; margin: 0 5px; min-height: 180px;
+// 					.images-for-slider{
+// 						svg{
+// 							.cls-1{
+// 							}
+// 						}
+// 					}
+// 					.text-content{padding: 0 20px 20px 20px;
+// 						p{
+// 						}
+// 					}
+// 				}
+// 				.slick-dots{bottom: -50px; 
+// 					li{margin: 0;
+// 						button{
+// 							&:before{width: 10px; height: 10px;
+								
+// 							}
+// 						}
+// 					}
+// 					.slick-active{
+// 						button{
+// 							&:before{
+								
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 			.wrapper-for-button{ padding: 120px 0  20px 0; margin-top: 20px;
+// 				.button{
+// 					span{}
+// 				}
+// 			}
+// 			.it-woman-image{left: 12%; top: 243px; z-index: 2; max-width: 289px; max-height: 236px; pointer-events: none;
+// 			}
+// 		}
+// 	}	
+// }
 @media screen and (max-width: 320px){
 	
 
