@@ -69,11 +69,12 @@
 
 }
 @media screen and (max-width: 479px){
-    .about-company{padding: 40px 0 0px 0;
+    .about-company .mbox .line-slider .line-item{margin-bottom:20px; }
+    .about-company{padding: 60px 0 0px 0;
         .mbox{ padding: 0 10px;}
     }
-    .about-company .about-company-text{margin: 0 auto 35px auto;
-        h2{margin: 0 0 20px 0;
+    .about-company .mbox .about-company-text{margin: 0 auto 25px auto;
+        h2{margin: 0 0 20px 0; font-size: 30px;
         }
         p{line-height: 1.45;}
     }
