@@ -25,6 +25,8 @@ header{background-color: #2b81da;position: relative;z-index: 84;
                             a{position: relative;justify-content: flex-start;padding-right: 5px;height: 58px;font-weight: 500;font-family: 'Museo';
                                 &:hover{
                                     span{color: #2b3bda;}
+                                    svg path {fill:#2b3bda !important;}
+
                                     svg:first-child{
                                         .cls-1{fill: #2b3bda;}
                                     }
@@ -39,6 +41,7 @@ header{background-color: #2b81da;position: relative;z-index: 84;
                             }
                             svg:first-child{}
                             // svg:nth-child(2){position: absolute;left: 0;top: 0px;opacity: 0;}
+                            svg path{transition:color ease-out .2s;}
                         }
                     }
                 }
