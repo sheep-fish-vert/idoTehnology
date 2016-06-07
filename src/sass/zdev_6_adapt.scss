@@ -299,7 +299,7 @@
 	}
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 830px){
 	.slider-biznes{
 		.mbox{
 			.biznes-heading{
@@ -493,7 +493,7 @@
 				}
 			}
 			.image-wrapper-home{
-				.it-woman-image{ right: 200px; top: -220px; max-width: 288px; max-height: 250px; z-index:1;
+				.it-woman-image{ left: 30px; top: -220px; max-width: 288px; max-height: 250px; z-index:1;
 				}
 			}
 		}
@@ -691,7 +691,7 @@
 				}
 			}
 			.image-wrapper-home{
-				.it-woman-image{right: 10px;top: -225px;
+				.it-woman-image{left: -10px;top: -225px;
 				}
 			}
 		}
