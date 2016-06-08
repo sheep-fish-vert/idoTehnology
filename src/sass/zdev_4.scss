@@ -1,4 +1,5 @@
 /*header*/
+header .header-mobile-768-tel.header-tel a{font-family:'Museo';}
 header .header-desctop .navigation > nav > ul > li > a {font-weight: bold;}
 header{background-color: #2b81da;position: relative;z-index: 84;
     #logo{
@@ -63,6 +64,7 @@ header{background-color: #2b81da;position: relative;z-index: 84;
     .header-mobile{display: none;}
     .header-mobile-768-logo{display: none;}
     .header-mobile-768-tel.header-tel{display: none;}
+
 }
 
 .button-line{
