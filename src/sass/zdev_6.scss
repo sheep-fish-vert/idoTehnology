@@ -13,7 +13,7 @@
 				&:nth-child(3){
 					.images-for-slider{padding: 47px 0 0 0 ; 
 						svg{
-							.cls-1{transform: scale(1.6);
+							.cls-1{
 								
 							}
 						}
@@ -26,6 +26,7 @@
 					.images-for-slider{
 						svg{
 							.cls-1{fill:#fff;}
+
 						}
 					}
 					.text-content{
@@ -36,6 +37,7 @@
 				.images-for-slider{text-align: center;padding: 45px 0 0 0 ;
 					svg{
 						.cls-1{fill:#2b80d9;}
+						.ethernet{transform: scale(1.6);}
 					}
 				}
 				.text-content{padding: 0 40px 30px 40px; max-width: 260px; margin: 0 auto; 
