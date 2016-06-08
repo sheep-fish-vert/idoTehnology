@@ -7,8 +7,8 @@
         &.mobile-sd{display: none;}
         &.desktop-cd {display: block;}
         .item{padding: 15px 0px 10px 14px; width: 50%; float: left; margin-right: 0px; 
-            .contein{position: relative;overflow: hidden; display: block;
-                .conv img{ transform: scale(1); transition: all 0.3s; }
+            .contein{position: relative;overflow: hidden; display: block; width: 570px; max-width: 100%;
+                .conv img{ transform: scale(1.0); transition: all 0.3s; }
                 .titl{position: absolute; bottom: 30px; left: 30px; right: 30px; font-size: 24px; font-family: "Museo", sans-serif; color: rgb(255, 255, 255); line-height: 1.2; text-align: left; font-weight: 500; padding-right: 10px;}
             }
             &:hover{
