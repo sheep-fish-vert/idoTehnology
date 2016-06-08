@@ -61,13 +61,15 @@
          }   
     }
     .interest_stat{ padding-bottom: 0;
-        .title h2 { padding: 30px 0; font-size: 40px;  line-height: 1.6;}
+        .title {padding:0px 0px 0px;
+            h2 {font-size: 40px;  line-height: 1.6;}
+        }
         &:before{display: none;}
         .mbox{padding: 0;}
         .conteiner .item {padding: 0; width: 768px; min-height: 250px;}
         .contein { height: 250px;
             img{ min-height: 250px; width: 100%;}
-            .titl{font-size: 20px;}
+            .titl{font-size: 20px; font-family: 'Museo';}
         }
     }
     .footer .footer-wrap-mobile { padding-top: 10px;
@@ -88,7 +90,12 @@
 
 }
 @media screen and (max-width: 479px){
-    .interest_stat .title h2{line-height: 1.2; font-size:30px;padding-top:55px; padding-bottom: 20px;  }
+    .interest_stat{
+        .title{
+            h2{line-height: 1.2; font-size:30px;  
+            }
+        }
+    }
     .interest_stat .conteiner.mobile-sd{margin-bottom: 10px;
         .slick-dots{
             li{margin: 3px;
