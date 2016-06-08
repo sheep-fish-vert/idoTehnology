@@ -42,12 +42,17 @@
 
 
 }
+@media screen and (max-width: 600px){
+    .line-slider{flex-wrap: wrap; justify-content: space-around; max-width: 600px; margin: 0 auto; padding: 0 15px 0 0;
+        .line-item:nth-child(1),.line-item:nth-child(2){margin-bottom: 20px;}
+         .line-item:nth-child(3),.line-item:nth-child(4){margin-bottom: 10px;}
+    }
+}
 @media screen and (max-width: 560px){
-
     .interest_stat .conteiner.desktop-cd { display: none;}
     .interest_stat .conteiner.mobile-sd { display: block;
-        .slick-dots { text-align: left;  bottom: 65%; width: auto;
-            li{width: 10px; height: 10px; border-radius: 50%; border: 2px solid #46f7f5; transition: all 0.3s;
+        .slick-dots { text-align: left;  bottom: 30%; left: 25px; width: auto;
+            li{width: 8px; height: 8px; border-radius: 50%; border: 2px solid #46f7f5; transition: all 0.3s;
                 button:before{display: none;}
                 &.slick-active{background: white; border-color: white;}
                 &:hover{border-color: white;}
@@ -85,7 +90,7 @@
 @media screen and (max-width: 479px){
     .interest_stat .title h2{line-height: 1.2; font-size:30px;padding-top:55px; padding-bottom: 20px;  }
     .interest_stat .conteiner.mobile-sd{margin-bottom: 10px;
-        .slick-dots{bottom: 30%; left: 20px;
+        .slick-dots{
             li{margin: 3px;
                 
             }

@@ -1,6 +1,9 @@
 /*header*/
 header .header-desctop .navigation > nav > ul > li > a {font-weight: bold;}
 header{background-color: #2b81da;position: relative;z-index: 84;
+    #logo{
+        .st1{fill:#46f8ff;}
+    }
     .header-desctop{min-height: 128px;display: flex;align-items:center;justify-content:space-between;
         .navigation{align-self: flex-end;width: 100%;max-width: 635px; padding-right: 0px;
             &>nav>ul{margin:0;padding: 0;display: flex;list-style-type: none;align-items: center;
