@@ -136,6 +136,7 @@
 }
 @media screen and (max-width: 479px){
     /*header pravki*/
+    header .header-mobile{margin-top: -16px;}
     header .header-mobile-768-logo{display: none;}
     header .header-mobile .header-mobile-logo{display: block;}
     header .header-mobile-768-tel.header-tel{display: none;}
@@ -151,6 +152,7 @@
     header .header-mobile .header-mobile-tell-modal.active {right: 17px;}
     header .header-mobile .header-mobile-tell-modal a{text-decoration: none;color: #FFFFFF;font-size: 22px;margin-bottom: 22px;display: inline-block;}
     header .header-mobile .header-mobile-tell-modal a.button{background-color: transparent;border:2px solid white;    line-height: 36px;}
+
 }
 @media screen and (max-width: 320px){
 
