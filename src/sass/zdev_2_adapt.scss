@@ -38,11 +38,24 @@
     .interest_stat .conteiner .item .contein .titl {  position: absolute; bottom: 20px; left: 20px; font-weight: 500; font-size: 20px;}
 
 }
-@media screen and (max-width: 767px){
-    .interest_stat {padding-bottom:80px; 
-        .title h2{padding-bottom: 25px; padding-top: 55px;}
+@media screen and (max-width: 768px){
+    .interest_stat {padding-bottom:68px; 
+        .title h2{padding-bottom: 25px; padding-top: 57px;}
+        
+        .conteiner.desktop-cd{padding-right: 15px;
+            .item {padding: 15px 0px 3px 20px;
+                .contein {
+                    .titl{font-size:20px; bottom: 17px;padding-right: 0px; left: 15px;}
+                }
+            }
+        }
+    
     }
-
+    .footer{ padding-bottom: 27px;
+        .footer-wrap-mobile{padding-left: 13px;
+            
+        }
+    }
 
 }
 @media screen and (max-width: 600px){

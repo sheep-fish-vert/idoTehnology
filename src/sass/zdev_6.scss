@@ -7,21 +7,21 @@
 		}
 		.biznes-slider{display: flex; justify-content: flex-end; max-width: 900px; width: 100%; float: right;
 			.slide{border: 1px solid #e9e9e9; margin: 0 0 0 30px;transition: 0.5s; min-width: 270px; max-width: 270px;min-height: 180px;max-height: 180px;
-				&:nth-child(1){
-					.images-for-slider{padding: 45px 0 0 0 ;}
-				}
-				&:nth-child(3){
-					.images-for-slider{padding: 47px 0 0 0 ; 
-						svg{
-							.cls-1{
+				// &:nth-child(1){
+				// 	.images-for-slider{padding: 45px 0 0 0 ;}
+				// }
+				// &:nth-child(3){
+				// 	.images-for-slider{padding: 47px 0 0 0 ; 
+				// 		svg{
+				// 			.cls-1{
 								
-							}
-						}
-					}
-					.text-content{
-						p{padding: 0 5px;}
-					}
-				}
+				// 			}
+				// 		}
+				// 	}
+				// 	.text-content{
+				// 		p{padding: 0 5px;}
+				// 	}
+				// }
 				&:hover{ background-color: #2b3bda;
 					.images-for-slider{
 						svg{

@@ -47,16 +47,19 @@
     /* /ctext */
 
 }
-@media screen and (max-width: 767px){
-    .about-company{padding: 130px 0 20px 0;
+@media screen and (max-width: 768px){
+    .about-company{padding: 115px 0 20px 0;
         .mbox{padding: 0 10px;
-            .about-company-text{margin: 9px auto 55px auto;
-                    h2 {
-                font-size: 40px;
+            .about-company-text{margin: 9px auto 75px auto;
+                    h2 {font-size: 40px;
                 }
+            }
+            .line-slider{padding: 0;
+                
             }
         }    
     }
+    
 }
 @media screen and (max-width: 666px){
     
