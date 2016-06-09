@@ -4,11 +4,11 @@
     .title {padding: 0px 0px 0px 13px;
         h2{text-align: center; margin: 0; padding: 70px 0 40px 0 ;  font-size: 40px;font-family: "Museo", sans-serif; color: rgb(43, 59, 218); text-transform: uppercase; line-height: 1.2; font-weight: 900; }
     }
-    
+
     .conteiner{ width: 100%;
         &.mobile-sd{display: none;}
         &.desktop-cd {display: block;}
-        .item{padding: 15px 0px 10px 22px; width: 50%; float: left; margin-right: 0px; 
+        .item{padding: 15px 0px 10px 22px; width: 50%; float: left; margin-right: 0px;
             .contein{position: relative;overflow: hidden; display: block; width: 570px; max-width: 100%;
                 .conv img{ transform: scale(1.0); transition: all 0.3s; }
                 .titl{position: absolute; bottom: 27px; left: 30px; right: 30px; font-size: 24px; font-family: "Museo", sans-serif; color: rgb(255, 255, 255); line-height: 1.2; text-align: left; font-weight: 500; padding-right: 10px;}
@@ -16,7 +16,7 @@
             &:hover{
                 .contein .conv img{ transform: scale(1.2); }
             }
-        }          
+        }
     }
 }
 
@@ -24,7 +24,7 @@
 
 
 .footer .footer-wrap-mobile { padding: 0;}
-.footer-wrap-mobile{ 
+.footer-wrap-mobile{
     .foo-menu{ width: 100%; max-width: 630px; margin: 0 auto; padding: 0 20px;
         nav{ width: 100%; padding-bottom: 45px;
             ul{ list-style: none; padding: 0; display: flex; align-items: center; justify-content: space-between; width: 100%;
@@ -35,7 +35,7 @@
         }
     }
 
-    .mobile-top{ font-size: 14px; font-family: "Open Sans", sans-serif; color: rgb(154, 154, 154); line-height: 1.429; margin-bottom: 14px !important;}
+    .mobile-top{ font-size: 14px; font-family: "Open Sans", sans-serif; color: rgb(154, 154, 154); line-height: 1.429; margin-bottom: 14px;}
     .mobile-middle{ font-size: 16px; font-family: "Open Sans"; color: rgb(34, 34, 34); line-height: 1.25; text-align: center; margin-bottom: 19px !important;}
     .mobile-footer-2{ margin-bottom: 8px;
         a{ font-size: 24px; font-weight: 700; font-family: "MuseoSans", sans-serif; color: rgb(43, 129, 218); text-transform: uppercase; line-height: 2; text-align: center; text-decoration: none; letter-spacing: 0.015em;}
@@ -45,4 +45,4 @@
     }
 
 }
-.footer .footer-wrap-mobile .mobile-middle p span {font-weight: 400 !important;}
+.footer .footer-wrap-mobile .mobile-middle p span {font-weight: 400;}

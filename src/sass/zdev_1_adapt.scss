@@ -137,7 +137,7 @@
 }
 @media screen and (max-width: 479px){
 
-    .about-company{padding: 63px 0 24px 0;
+    .about-company{padding: 63px 0 28px 0;
         .mbox{ padding: 0 10px;}
     }
     .about-company{
@@ -164,6 +164,22 @@
             .mobile-middle{margin-bottom: 25px;}
         }
     }
+
+    .footer .footer-wrap-mobile { padding-top: 10px;
+        .foo-menu {display: none;}
+    }
+    .footer-contact-button{display: none;}
+    .footer-wrap-mobile .mobile-footer-2 a { font-size: 20px;}
+
+    .mobile-middle{
+        p{max-width: 210px; margin: 0 auto;}
+    }
+    .footer-wrap-mobile .mobile-top {margin-bottom: 21px!important;}
+    .footer-wrap-mobile .mobile-middle { margin-bottom: 10px !important; font-weight: 400;
+        p span{font-weight: 700 !important;font-size: 14px;}
+    }
+    .footer .footer-wrap-mobile .mobile-middle p span{font-weight: 700;}
+    .footer { padding-top: 0px; padding-bottom: 20px;}
 
 }
 @media screen and (max-width: 320px){
