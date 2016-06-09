@@ -16,7 +16,7 @@
          .line-item:nth-child(3),.line-item:nth-child(4){margin-bottom: 10px;}
     }
     .interest_stat{padding-bottom: 97px;
-
+        &:before{bottom: 23.6%;}
         .title{
             h2{ padding-bottom: 33px; padding-top: 67px;}
         }
@@ -42,7 +42,7 @@
     .interest_stat {padding-bottom:68px;
         .title h2{padding-bottom: 25px; padding-top: 57px;}
 
-        .conteiner.desktop-cd{padding-right: 15px;
+        .conteiner.desktop-cd{padding-right: 5px;
             .item {padding: 15px 0px 3px 20px;
                 .contein {
                     .titl{font-size:20px; bottom: 17px;padding-right: 0px; left: 15px;}

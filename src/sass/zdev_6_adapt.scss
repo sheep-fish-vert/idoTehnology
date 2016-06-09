@@ -107,7 +107,7 @@
 			}
 			.wrapper-for-button{   clear: both; position: relative; z-index: 3;}
 			.image-wrapper-home{
-				.it-woman-image{ right: -160px;}
+				.it-woman-image{ right: -146px;}
 			}
 		}
 	}
@@ -115,7 +115,9 @@
 @media screen and (max-width: 768px){
 	.slider-home{
 		.mbox{padding-left:20px;
-			.home-heading{padding-top: 35px;}
+			.home-heading{padding-top: 39px;
+				h2{margin-bottom: 41px;}
+			}
 			.home-slider{
 				.slick-dots{bottom: 178px; left: -14px;
 					li{margin : 0 8px;}
