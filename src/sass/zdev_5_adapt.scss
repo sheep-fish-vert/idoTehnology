@@ -1,8 +1,22 @@
 .show-on1024{ display: none;}
 
 @media screen and (max-width: 1024px){
-    .show-on1024{ display: block;margin-top: 55px;
-        margin-left: 9px;}
+    .footer{
+        .footer-wrap{
+            .column{
+                .column-list{margin-bottom: 0px;}
+                &:nth-child(3){padding-left:27px;}
+                .show-on1024{ display: block;margin-top: 55px; margin-left: 5px;
+                    
+                        .footer-contact{ 
+                            .footer-contact-telefone-wrap{font-family: 'Open Sans'
+                            }
+                        }
+
+                }
+            }
+        }
+    }
     .hide-on1024{ display: none;}
     .footer{
         .footer-wrap{ padding: 0 7px; justify-content: flex-start;
@@ -10,7 +24,7 @@
                 &.first{ width: 30%;}
                 &.second{ width: 29.5%;}
             }
-            .footer-logo { right: auto;                left: -38px;}
+            .footer-logo { right: auto;   left: -30px;}
         }
     }
 }

@@ -11,14 +11,20 @@
 
 }
 @media screen and (max-width: 1024px){
-
+    .footer{
+        .mbox{padding-left: 0px;
+            
+        }
+    }
 }
 @media screen and (max-width: 992px){
 
     /* footer */
 
-        .footer{
-
+        .footer{padding-top: 15px;
+            .mbox{
+                
+            }
             .footer-wrap{display: none;}
 
             .footer-wrap-mobile{display:flex;}
