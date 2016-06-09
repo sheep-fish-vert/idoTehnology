@@ -63,7 +63,12 @@
                     // &:hover{color:#000;}
                 }
             }
-
+            .return-address{max-width: 250px; float: right;margin-top: 10px; 
+                p{white-space: pre-line; line-height: 1.3;
+                    
+                }
+                
+            }
             .footer-logo{position: absolute;bottom: 0px;right: 0px;width: 25%;
                 a{display: flex;justify-content: flex-end;align-items: center;text-decoration: none;
                     &:hover{
