@@ -11,9 +11,9 @@
 
 }
 @media screen and (max-width: 1024px){
-    .footer{
+    .footer{padding-bottom: 30px;
         .mbox{padding-left: 0px;
-            
+
         }
     }
 }
@@ -23,7 +23,7 @@
 
         .footer{padding-top: 15px;
             .mbox{
-                
+
             }
             .footer-wrap{display: none;}
 
@@ -55,14 +55,14 @@
                 }
             }
             .line-slider{padding: 0;
-                
+
             }
-        }    
+        }
     }
-    
+
 }
 @media screen and (max-width: 666px){
-    
+
     /* ctext */
 
         .ctext{
@@ -92,14 +92,14 @@
         .footer-wrap-mobile { padding-top: 0;
             .mobile-footer {margin-bottom: 10px;
                 a {font-size :20px;
-                }  
+                }
             }
             .mobile-middle{margin-bottom: 25px;
-                
+
             }
         }
     }
-    
+
 
 }
 @media screen and (max-width: 320px){

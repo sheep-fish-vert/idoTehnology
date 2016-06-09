@@ -21,11 +21,11 @@
             h2{ padding-bottom: 33px; padding-top: 67px;}
         }
         .interest_stat .conteiner .item{
-            
+
         }
     }
     .interest_stat .conteiner {padding-right: 10px;
-        .item {padding: 15px 0px 10px 27px; width: 50%;
+        .item {padding: 17px 0px 4px 27px; width: 49%;
             .contein .titl{font-size:20px; bottom: 20px;padding-right: 0px; left: 25px;
             }
         }
@@ -39,9 +39,9 @@
 
 }
 @media screen and (max-width: 768px){
-    .interest_stat {padding-bottom:68px; 
+    .interest_stat {padding-bottom:68px;
         .title h2{padding-bottom: 25px; padding-top: 57px;}
-        
+
         .conteiner.desktop-cd{padding-right: 15px;
             .item {padding: 15px 0px 3px 20px;
                 .contein {
@@ -49,11 +49,11 @@
                 }
             }
         }
-    
+
     }
     .footer{ padding-bottom: 27px;
         .footer-wrap-mobile{padding-left: 13px;
-            
+
         }
     }
 
@@ -72,9 +72,9 @@
                 button:before{display: none;}
                 &.slick-active{background: white; border-color: white;}
                 &:hover{border-color: white;}
-            
+
             }
-         }   
+         }
     }
     .interest_stat{ padding-bottom: 0;
         .title {padding:0px 0px 0px;
@@ -108,19 +108,19 @@
 @media screen and (max-width: 479px){
     .interest_stat{
         .title{
-            h2{line-height: 1.2; font-size:30px;  
+            h2{line-height: 1.2; font-size:30px;
             }
         }
     }
     .interest_stat .conteiner.mobile-sd{margin-bottom: 10px;
         .slick-dots{
             li{margin: 3px;
-                
+
             }
         }
     }
     .interest_stat .conteiner .item .contein .titl{padding-left: 10px;bottom: 30px;}
-    
+
 
 }
 @media screen and (max-width: 320px){
