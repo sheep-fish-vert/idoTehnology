@@ -108,11 +108,10 @@
 @media screen and (max-width: 479px){
     .interest_stat{
         .title{
-            h2{line-height: 1.2; font-size:30px;
-            }
+            h2{line-height: 1.2; font-size:30px;padding-bottom: 21px;padding-top: 54px;}
         }
     }
-    .interest_stat .conteiner.mobile-sd{margin-bottom: 10px;
+    .interest_stat .conteiner.mobile-sd{margin-bottom: 10px;padding-right: 0;
         .slick-dots{
             li{margin: 3px;
 
@@ -120,6 +119,11 @@
         }
     }
     .interest_stat .conteiner .item .contein .titl{padding-left: 10px;bottom: 30px;}
+    .interest_stat .contein{height: 240px;}
+
+    .interest_stat{background-color: #fff;
+
+    }
 
 
 }
