@@ -97,6 +97,7 @@
 
 }
 @media screen and (max-width: 768px){
+
     .about-company{padding: 115px 0 20px 0;
         .mbox{padding: 0 10px;
             .about-company-text{margin: 7px auto 72px auto;
@@ -108,6 +109,13 @@
 
     .footer{ padding:74px 0 27px 0;
         .footer-wrap-mobile{padding-left: 13px;}
+    }
+
+    .line-slider{
+        .line-item-wrap{
+            .line-img{margin-right: 16px;}
+            .line-text{font-size: 16px;max-width: 206px;}
+        }
     }
 
 }
