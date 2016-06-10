@@ -197,6 +197,7 @@
 }
 
 @media screen and (max-width: 479px){
+
 	.slider-biznes{
 		.mbox{padding: 0 10px 0 10px;
 			.biznes-heading{padding: 30px 0 0  0;
@@ -222,7 +223,7 @@
 	.slider-home{
 		.mbox{ padding: 0 10px 0 10px;
 			.home-heading{ padding-top: 20px;}
-			.home-slider{
+			.home-slider{max-width: none;
 				.slick-dots{left: 10px;bottom: -55px;
 					li{margin: -2px;
 						button{
@@ -230,9 +231,12 @@
 						}
 					}
 				}
+				.slide{max-width: none;
+					.text-content{padding:0 5px 25px 5px;}
+				}
 			}
 			.image-wrapper-home{
-				.it-woman-image{left: 0px;top: -219px;}
+				.it-woman-image{left: 3px;top: -224px;}
 			}
 			.wrapper-for-button{padding: 113px 0 13px 0px;}
 		}

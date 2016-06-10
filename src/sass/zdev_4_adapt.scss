@@ -144,12 +144,12 @@
     header .header-mobile .header-mobile-button span{width: 23px;}
     header .header-mobile .header-mobile-button span:nth-child(1){top: 36%;}
     header .header-mobile .header-mobile-button span:nth-child(3){top: 66%;}
-    header .header-mobile .header-mobile-tell{display: block;right: 69px;}
-    header .header-mobile .header-mobile-tell-img{padding: 10px 12px 15px;margin-top: 6px;
+    header .header-mobile .header-mobile-tell{display: block;right: 69px;top:42%;}
+    header .header-mobile .header-mobile-tell-img{padding: 10px 12px 17px;margin-top: 6px;
         &.active{background-color: #125eac;}
     }
-    header .header-mobile .header-mobile-tell-modal{top: calc(100% - 31px);z-index: 10;transform: translateY(0);background-color: #125eac;color: white;width: calc(100% - 30px);padding: 27px 30px;}
-    header .header-mobile .header-mobile-tell-modal.active {right: 17px;}
+    header .header-mobile .header-mobile-tell-modal{top: calc(100% - 31px);z-index: 10;transform: translateY(0);background-color: #125eac;color: white;width: calc(100% - 20px);padding: 27px 30px;}
+    header .header-mobile .header-mobile-tell-modal.active {right: 10px;}
     header .header-mobile .header-mobile-tell-modal a{text-decoration: none;color: #FFFFFF;font-size: 22px;margin-bottom: 22px;display: inline-block;}
     header .header-mobile .header-mobile-tell-modal a.button{background-color: transparent;border:2px solid white;    line-height: 36px;}
 

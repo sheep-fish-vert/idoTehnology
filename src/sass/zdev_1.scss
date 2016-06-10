@@ -140,3 +140,40 @@
     }
 
 /* /about-company */
+
+/* popup */
+
+    .fancybox-overlay{background-image:none;}
+
+    .fancybox-form{width: 300px!important;left:calc(50% - 150px)!important;
+        &.fancybox-opened{
+            .fancybox-skin{box-shadow: none;}
+        }
+        .fancybox-inner{width: 300px!important;}
+    }
+
+    #call-popup{width: 300px;height: 228px;background-color:#125eac;padding:41px 23px 28px 24px;
+        .form_input{margin-bottom: 20px;
+            input{width: 100%;height: 38px;line-height: 38px;font-size: 14px;color:#464646;padding:0 12px;border-style:solid;border-color:transparent;border-width: 1px;transition:all 300ms ease;
+                &.error{border-color:#e51b06;
+                    &+label{display: none!important;color:transparent;font-size: 0;}
+                    &::-webkit-input-placeholder {color:#e51b06;}
+                    &:-moz-placeholder {color:#e51b06;opacity:1;}
+                    &::-moz-placeholder {color:#e51b06;opacity:1;}
+                    &:-ms-input-placeholder {color:#e51b06;}
+                }
+            }
+        }
+        .contact-form-row{margin-bottom: 5px;
+            &:last-child{margin-bottom: 0;}
+        }
+        .submit-form-row{
+            .contact-form-item{text-align: center;
+                button{border-style:solid;border-color:#fff;line-height: 36px;background-color: transparent;transition:all 300ms ease;
+                    &:hover{color:#125eac;background-color:#fff;}
+                }
+            }
+        }
+    }
+
+/* popup */
