@@ -145,7 +145,7 @@
 
     .fancybox-overlay{background-image:none;}
 
-    .fancybox-form{width: 300px!important;left:calc(50% - 150px)!important;
+    .fancybox-wrap.fancybox-form{width: 300px!important;left:calc(50% - 150px)!important;
         &.fancybox-opened{
             .fancybox-skin{box-shadow: none;}
         }
