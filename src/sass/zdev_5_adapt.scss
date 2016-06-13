@@ -1,21 +1,46 @@
 .show-on1024{ display: none;}
 
+@media screen and (max-width: 1090px){
+    .contacts{
+        .txt{max-width: 300px;}
+        .white-box {
+            .text-w { max-width: 300px; }
+        }
+    }
+}
 @media screen and (max-width: 1024px){
 
     .hide-on1024{ display: none;}
 
 }
 @media screen and (max-width: 992px){
-
+    .contacts{
+        .content{ padding-bottom:67px;}
+        .txt{max-width: none;}
+        .white-box {padding: 304px 0 198px 7px;
+            .text-w {max-width: none;}
+        }
+        .title{padding: 44px 0 28px;}
+        #map{ width: calc(100% - 30px); right: 15px; top: calc(100% + 20px); height: 320px;}
+    }
 }
 @media screen and (max-width: 767px){
-
+    padding: 0px 8px;
 }
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
-
+    .contacts{
+        .mbox{padding: 0 8px;}
+        .title{padding: 11px 0 28px;
+            h2{ color: #48fefc; font-size: 36px;}
+        }
+        .white-box { padding: 307px 0 52px 7px;
+            .text-w { font: 500 22px/22px 'Museo'; }
+        }
+    }
+    .contacts-global .footer{padding-top: 34px;}
 }
 @media screen and (max-width: 320px){
 
