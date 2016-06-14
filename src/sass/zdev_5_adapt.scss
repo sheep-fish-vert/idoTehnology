@@ -25,7 +25,19 @@
     }
 }
 @media screen and (max-width: 767px){
-    padding: 0px 8px;
+   #call-popup3,
+   #call-popup2{
+       .form_input{ display: block; margin: 0 auto 9px; max-width: none;}
+       .half{ width: 100%; margin: 0 auto 9px;
+            &:first-child{ margin: 0 auto 9px;}
+       }
+       .title{ padding: 32px 0 12px;
+         h3{ font-size: 23px;}
+       }
+   }
+    .fancybox-wrap2 .fancybox-close { top: -21px; right: -21px; }
+
+
 }
 @media screen and (max-width: 666px){
 

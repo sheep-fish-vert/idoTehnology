@@ -209,6 +209,21 @@ function fancyboxForm(){
     padding:'0'
   })
 }
+function fancyboxForm2(){
+    $('.fancybox-form2').fancybox({
+        openEffect  : 'fade',
+        closeEffect : 'fade',
+        wrapCSS:'fancybox-wrap2',
+        maxWidth	: 670,
+        maxHeight	: 437,
+        fitToView	: false,
+        width		: '90%',
+        height		: '90%',
+
+        autoSize	: false,
+        padding:'0'
+    })
+}
 
 //ajax func for programmer
 
@@ -266,7 +281,9 @@ function someAjax(item, someUrl, successFunc, someData){
 $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
+   validate('#call-popup2 .contact-form2', {submitFunction:validationCall});
    Maskedinput();
    fancyboxForm();
+   fancyboxForm2();
 
 });
