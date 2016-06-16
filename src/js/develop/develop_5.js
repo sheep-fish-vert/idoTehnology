@@ -21,13 +21,13 @@ var map;
                 var controlToFullScreen = document.createElement('div');
                 controlToFullScreen.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
                 controlToFullScreen.style.cursor = 'pointer';
-                controlToFullScreen.style.width = '50px';
-                controlToFullScreen.style.height = '50px';
-                controlToFullScreen.style.backgroundImage = 'url(images/z_in.svg)';
+                controlToFullScreen.style.width = '40px';
+                controlToFullScreen.style.height = '40px';
+                controlToFullScreen.style.backgroundImage = 'url(images/z_out.jpg)';
                 controlToFullScreen.style.backgroundPosition = 'center';
                 controlToFullScreen.style.backgroundRepeat = 'no-repeat';
-                controlToFullScreen.style.borderRadius = '50%';
-                controlToFullScreen.style.marginTop = '10px';
+
+                
 
                 controlToFullScreen.title = 'Click to fullscreen';
                 controlDiv.appendChild(controlToFullScreen);
@@ -35,13 +35,13 @@ var map;
                 var controlFromFullScreen = document.createElement('div');
                 controlFromFullScreen.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
                 controlFromFullScreen.style.cursor = 'pointer';
-                controlFromFullScreen.style.width = '50px';
-                controlFromFullScreen.style.height = '50px';
-                controlFromFullScreen.style.backgroundImage = 'url(images/z_out.svg)';
+                controlFromFullScreen.style.width = '40px';
+                controlFromFullScreen.style.height = '40px';
+                controlFromFullScreen.style.backgroundImage = 'url(images/z_in.jpg)';
                 controlFromFullScreen.style.backgroundPosition = 'center';
                 controlFromFullScreen.style.backgroundRepeat = 'no-repeat';
-                controlFromFullScreen.style.borderRadius = '50%';
-                controlFromFullScreen.style.marginTop = '10px';
+
+
                 controlFromFullScreen.style.display = 'none';
 
                 controlFromFullScreen.title = 'Click to fullscreen';
@@ -66,7 +66,7 @@ var map;
             var FullAndBackDiv = document.createElement('div');
             var centerControl = new CenterControl(FullAndBackDiv, map);
             FullAndBackDiv.index = 1;
-            map.controls[google.maps.ControlPosition.TOP_CENTER].push(FullAndBackDiv);
+            map.controls[google.maps.ControlPosition.TOP_RIGHT].push(FullAndBackDiv);
         }
         initialize();
     }
