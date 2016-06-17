@@ -78,6 +78,9 @@ input, textarea{
     &:-ms-input-placeholder {color:#212121;}
 }
 
+.left-column-main{float: left;width: 270px;}
+.right-column-main{float: right;width: calc(100% - 300px);}
+
 /*End Layout*/
 
 /*fonts*/

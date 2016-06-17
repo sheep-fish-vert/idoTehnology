@@ -5,6 +5,11 @@
     }
 
 /*contacts ----------------------------------------*/
+
+    .contacts-global{
+        .main{position: relative;z-index: 1;}
+    }
+
     .contacts{
         .mbox{max-width: 1190px;}
         .txt-box{ position: relative;}
