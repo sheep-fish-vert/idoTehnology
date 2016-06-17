@@ -65,7 +65,6 @@ header{background-color: #2b81da;position: relative;z-index: 84;
     .header-mobile{display: none;}
     .header-mobile-768-logo{display: none;}
     .header-mobile-768-tel.header-tel{display: none;}
-
 }
 
 .button-line{
@@ -75,4 +74,9 @@ header{background-color: #2b81da;position: relative;z-index: 84;
             &:after{width: 0px;}
         }
     }
+}
+
+// service bottom page
+.service-bottom{padding-top: 49px;
+    .line-slider{}
 }
