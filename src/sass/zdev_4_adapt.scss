@@ -24,6 +24,20 @@
             }
         }
     }
+
+    // service
+    .fixing-computers{
+        .fixing-computers-mobile-img{display: block;margin-bottom: 20px;}
+        .fixing-computers-center{flex-direction: column;
+            .fixing-computers-left{margin-bottom: 40px;}
+            .fixing-computers-right{width: 100%;max-width: 470px;
+                .fixing-computers-right-img{display: none;}
+                .fixing-computers-button{justify-content: center;}
+                .fixing-computers-button-bottom{text-align: center;}
+            }
+        }
+    }
+    .service-bottom .service-bottom-reviews-title{text-align: center;}
 }
 @media screen and (max-width: 1024px){
     header{
@@ -119,6 +133,63 @@
             a{text-transform: uppercase;color: white;text-decoration: none;font-size: 26px; font-weight :700;}
         }
     }
+
+    // left column
+    .left-column-main{width: 250px;max-width: 270px;float: none;position: absolute;top: 10px;right: 100%;transition:right ease .2s;background-color: #fff;
+        &.active{right: calc(100% - 250px);}
+        .column-nav-wrap{position: relative;
+            .column-nav ul{max-width: 100%;
+                li{padding-left: 15px;}
+            }
+        }
+        .column-nav-mobile-arrow{position: absolute;height: 50px;width: 50px;display: block;top: 0;left: 100%;background-color: #48fefc;cursor: pointer;
+            &:after,&:before,span{content: '';height: 3px;width: 25px;position: absolute;left: 50%;top: 50%;background-color: #2b81da;border-radius: 5px;transform: translate(-50%, -50%);transition: all ease .2s;
+            }
+             &:after{top: 17px;}
+             &:before{bottom: 14px;top: auto;}
+
+             &.active{
+                span{opacity: 0;}
+                &:after{top: 25px;transform: translate(-50%, -50%) rotate(45deg);}
+                &:before{bottom: 22px;top: auto;transform: translate(-50%, -50%) rotate(-45deg);}
+             }
+        }
+    }
+
+    // right column
+    .right-column-main{width: 100%;float: none;}
+
+     // service
+    .blue-block-wrap{margin-bottom: 20px;}
+
+    .fixing-computers{
+        .fixing-computers-mobile-img{
+            img{display: block;margin:0 auto;}
+        }
+        .fixing-computers-top{
+            .fixing-computers-text{max-width: 100%;}
+        }
+        .fixing-computers-center{margin-bottom: 0;
+            .fixing-computers-left{width: 100%;
+                .fixing-computers-title{text-align: center;}
+                .fixing-computers-table{margin: 0 auto;}
+            }
+            .fixing-computers-right{max-width: 100%;
+                .fixing-computers-right-img{}
+                .fixing-computers-button{}
+                .fixing-computers-button-bottom{}
+            }
+        }
+    }
+    .service-bottom{
+        .line-slider{padding: 0;}
+        .service-bottom-reviews-slider {
+            .item {
+                .item-description{width: calc(100% - 80px - 30px);float: right;}
+            }
+        }
+    }
+
 }
 @media screen and (max-width: 768px){
     header .header-mobile-768-tel.header-tel{margin-right: -7.9%;}
@@ -133,6 +204,24 @@
 }
 @media screen and (max-width: 605px){
     header .header-mobile-768-tel.header-tel a{font-size: 19px;}
+
+    // services page
+    .fixing-computers{
+        .fixing-computers-title{text-align: center;
+            h3{font-size: 37px;}
+        }
+        .fixing-computers-top{padding-bottom: 43px;
+            .fixing-computers-text{font-size: 14px;}
+        }
+    }
+    .blue-block-wrap{padding-top: 9px;}
+    .service-bottom{padding-top: 17px;
+        .service-bottom-reviews-title{margin-bottom: 30px;}
+        .service-bottom-reviews-title h3{font-size: 37px;margin-right: 0;display: block;margin-bottom: 15px;}
+        .line-slider{margin-bottom: 44px;}
+    }
+
+
 }
 @media screen and (max-width: 479px){
     /*header pravki*/
@@ -157,6 +246,14 @@
     header .header-mobile .header-mobile-tell-modal a.button{background-color: transparent;border:2px solid white;    line-height: 36px;}
 
 }
-@media screen and (max-width: 320px){
-
+@media screen and (max-width: 380px){
+    // services page
+    .fixing-computers{
+        .fixing-computers-center .fixing-computers-right .fixing-computers-button{flex-direction: column;align-items: center;
+            a{margin-left: 0;margin-bottom: 15px;}
+        }
+    }
+    .service-bottom{background:none;padding-bottom: 70px;}
+    .service-bottom .service-bottom-reviews-slider .item .item-img{float: none;margin: 0 auto 15px;}
+    .service-bottom .service-bottom-reviews-slider .item .item-description{float: none;width: 100%;padding: 0 15px;text-align: center;}
 }

@@ -15,9 +15,35 @@ function showHeaderMenu(){
     });
 }
 
+function servicesSlider() {
+    $('.service-slider-prev-button').click(function(event) {
+        $('.service-bottom-reviews-slider').slick('slickPrev');
+    });
+    $('.service-slider-next-button').click(function(event) {
+        $('.service-bottom-reviews-slider').slick('slickNext');
+    });
+    $('.service-bottom-reviews-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 666,
+                settings:{
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+}
+
 
 $(document).ready(function(){
     showHeaderMenu();
+    servicesSlider();
 });
 
 $(window).load(function(){
