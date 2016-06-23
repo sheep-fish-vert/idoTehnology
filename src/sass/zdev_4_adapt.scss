@@ -139,32 +139,27 @@
     // right column
     .right-column-main{width: 100%;float: none;}
 
-     // service
-    .blue-block-wrap{margin-bottom: 20px;}
+    // service
 
-    .fixing-computers{padding-top: 35px;
+    .fixing-computers{padding-top: 37px;
 
         .fixing-computers-mobile-img{
             img{display: block;margin:0 auto;}
         }
 
         .fixing-computers-title{
-            h3{font-size: 34px;}
+            h3{font-size: 34px;line-height: 0.9;}
         }
-        .fixing-computers-top{
+        .fixing-computers-top{padding-bottom: 59px;
             .fixing-computers-text{max-width: 100%;font-size: 15px;}
         }
 
         .fixing-computers-center{margin-bottom: 0;
             .fixing-computers-left{width: 100%;
                 .fixing-computers-title{text-align: center;}
-                .fixing-computers-table{margin: 0 auto;}
+                .fixing-computers-table{margin: 0 auto;padding-top: 14px;}
             }
-            .fixing-computers-right{max-width: 100%;
-                .fixing-computers-right-img{}
-                .fixing-computers-button{}
-                .fixing-computers-button-bottom{}
-            }
+            .fixing-computers-right{max-width: 100%;}
         }
 
     }
@@ -194,14 +189,9 @@
 
     // services page
     .fixing-computers{
-        .fixing-computers-title{text-align: center;
-            h3{font-size: 37px;}
-        }
-        .fixing-computers-top{padding-bottom: 43px;
-            .fixing-computers-text{font-size: 14px;}
-        }
+        .fixing-computers-title{text-align: left;}
     }
-    .blue-block-wrap{padding-top: 9px;}
+
     .service-bottom{padding-top: 17px;
         .service-bottom-reviews-title{margin-bottom: 30px;}
         .service-bottom-reviews-title h3{font-size: 37px;margin-right: 0;display: block;margin-bottom: 15px;}
@@ -236,34 +226,43 @@
 
         .fixing-computers{
             .fixing-computers-center{
-                .fixing-computers-left{
+                .fixing-computers-left{margin-bottom: 37px;
                     .fixing-computers-title{text-align: left;}
                     .fixing-computers-table{max-width: none;
                         table, tr, td, tbody{display: block;}
                         table{
-                            td{border-bottom:none;padding-bottom: 10px;padding-top: 0px;
+                            td{border-bottom:none;padding-bottom: 8px;padding-top: 0px;
                                 &:first-child, &:last-child{width: 100%;text-align: left;}
                             }
                         }
-                        tr{border-bottom: 1px solid #dfdfdf;padding:15px 0 5px 0;}
+                        tr{border-bottom: 1px solid #dfdfdf;padding:13px 0 7px 0;}
                     }
                 }
                 .fixing-computers-right{display: none;}
             }
         }
 
-        .service-bottom{background:none;padding-bottom: 55px;
+        .service-bottom{background:none;padding-bottom: 50px;
 
-            .line-slider{justify-content: flex-start;}
+            .line-slider{justify-content: flex-start;margin-bottom: 55px;
+                .line-item{padding:0;margin-left: -4px;}
+                .line-item-wrap{
+                    .line-img{margin-right: 23px;}
+                    .line-text{font-size: 14px;}
+                }
+            }
 
             .service-bottom-reviews-title{display: flex;justify-content: space-between;align-items:center;text-align: left;
-                h3{width: calc(100% - 60px);display: inline-block;margin-bottom: 0;}
+                h3{width: calc(100% - 90px);display: inline-block;margin-bottom: 0;line-height: 0.8;}
+                .service-slider-arrows-wrap{margin-right: 27px;}
             }
 
             .service-bottom-reviews-slider{
+
                 .item{
-                    .item-img{float: none;margin-bottom: 20px;}
+                    .item-img{float: none;margin-bottom: 23px;}
                     .item-description{float:none;width: 100%;}
+                    .item-descript-text{line-height: 1.5;}
                 }
             }
 
