@@ -134,27 +134,7 @@
         }
     }
 
-    // left column
-    .left-column-main{width: 250px;max-width: 270px;float: none;position: absolute;top: 10px;right: 100%;transition:right ease .2s;background-color: #fff;
-        &.active{right: calc(100% - 250px);}
-        .column-nav-wrap{position: relative;
-            .column-nav ul{max-width: 100%;
-                li{padding-left: 15px;}
-            }
-        }
-        .column-nav-mobile-arrow{position: absolute;height: 50px;width: 50px;display: block;top: 0;left: 100%;background-color: #48fefc;cursor: pointer;
-            &:after,&:before,span{content: '';height: 3px;width: 25px;position: absolute;left: 50%;top: 50%;background-color: #2b81da;border-radius: 5px;transform: translate(-50%, -50%);transition: all ease .2s;
-            }
-             &:after{top: 17px;}
-             &:before{bottom: 14px;top: auto;}
 
-             &.active{
-                span{opacity: 0;}
-                &:after{top: 25px;transform: translate(-50%, -50%) rotate(45deg);}
-                &:before{bottom: 22px;top: auto;transform: translate(-50%, -50%) rotate(-45deg);}
-             }
-        }
-    }
 
     // right column
     .right-column-main{width: 100%;float: none;}
