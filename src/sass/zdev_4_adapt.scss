@@ -27,7 +27,7 @@
 
     // service
     .fixing-computers{
-        .fixing-computers-mobile-img{display: block;margin-bottom: 20px;}
+        /*.fixing-computers-mobile-img{display: block;margin-bottom: 20px;}*/
         .fixing-computers-center{flex-direction: column;
             .fixing-computers-left{margin-bottom: 40px;}
             .fixing-computers-right{width: 100%;max-width: 470px;
@@ -142,13 +142,19 @@
      // service
     .blue-block-wrap{margin-bottom: 20px;}
 
-    .fixing-computers{
+    .fixing-computers{padding-top: 35px;
+
         .fixing-computers-mobile-img{
             img{display: block;margin:0 auto;}
         }
-        .fixing-computers-top{
-            .fixing-computers-text{max-width: 100%;}
+
+        .fixing-computers-title{
+            h3{font-size: 34px;}
         }
+        .fixing-computers-top{
+            .fixing-computers-text{max-width: 100%;font-size: 15px;}
+        }
+
         .fixing-computers-center{margin-bottom: 0;
             .fixing-computers-left{width: 100%;
                 .fixing-computers-title{text-align: center;}
@@ -160,6 +166,7 @@
                 .fixing-computers-button-bottom{}
             }
         }
+
     }
     .service-bottom{
         .line-slider{padding: 0;}
@@ -225,6 +232,47 @@
     header .header-mobile .header-mobile-tell-modal a{text-decoration: none;color: #FFFFFF;font-size: 22px;margin-bottom: 22px;display: inline-block;}
     header .header-mobile .header-mobile-tell-modal a.button{background-color: transparent;border:2px solid white;    line-height: 36px;}
 
+    /* service */
+
+        .fixing-computers{
+            .fixing-computers-center{
+                .fixing-computers-left{
+                    .fixing-computers-title{text-align: left;}
+                    .fixing-computers-table{max-width: none;
+                        table, tr, td, tbody{display: block;}
+                        table{
+                            td{border-bottom:none;padding-bottom: 10px;padding-top: 0px;
+                                &:first-child, &:last-child{width: 100%;text-align: left;}
+                            }
+                        }
+                        tr{border-bottom: 1px solid #dfdfdf;padding:15px 0 5px 0;}
+                    }
+                }
+                .fixing-computers-right{display: none;}
+            }
+        }
+
+        .service-bottom{background:none;padding-bottom: 55px;
+
+            .line-slider{justify-content: flex-start;}
+
+            .service-bottom-reviews-title{display: flex;justify-content: space-between;align-items:center;text-align: left;
+                h3{width: calc(100% - 60px);display: inline-block;margin-bottom: 0;}
+            }
+
+            .service-bottom-reviews-slider{
+                .item{
+                    .item-img{float: none;margin-bottom: 20px;}
+                    .item-description{float:none;width: 100%;}
+                }
+            }
+
+            .service-bottom-button{display: block;}
+
+        }
+
+    /* /service */
+
 }
 @media screen and (max-width: 380px){
     // services page
@@ -233,7 +281,5 @@
             a{margin-left: 0;margin-bottom: 15px;}
         }
     }
-    .service-bottom{background:none;padding-bottom: 70px;}
-    .service-bottom .service-bottom-reviews-slider .item .item-img{float: none;margin: 0 auto 15px;}
-    .service-bottom .service-bottom-reviews-slider .item .item-description{float: none;width: 100%;padding: 0 15px;text-align: center;}
+
 }

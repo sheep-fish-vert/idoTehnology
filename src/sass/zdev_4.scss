@@ -87,10 +87,12 @@ header{background-color: #2b81da;position: relative;z-index: 84;
         .service-slider-prev-button{height: 21px;width: 21px;border-left: 2px solid #c2c2c2;border-top: 2px solid #c2c2c2;display: inline-block;transform: rotate(-45deg);cursor: pointer;transition:all ease .2s;
             &:hover{border-color: #3b4add}
         }
+        .service-slider-arrows-wrap{display: inline-block;}
         .service-slider-next-button{height: 21px;width: 21px;border-right: 2px solid #c2c2c2;border-bottom: 2px solid #c2c2c2;display: inline-block;transform: rotate(-45deg);margin-left: 0px;cursor: pointer;transition:all ease .2s;
              &:hover{border-color: #3b4add}
         }
     }
+
     .service-bottom-reviews-slider{font-family: 'Muller';margin-bottom: 0;
         .item{
             &:after{content: '';display: block;clear: both;}
@@ -104,6 +106,9 @@ header{background-color: #2b81da;position: relative;z-index: 84;
             }
         }
     }
+
+    .service-bottom-button{text-align: center;padding-top: 60px;display: none;}
+
 }
 
 // services fixing computers
