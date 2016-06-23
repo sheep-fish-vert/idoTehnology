@@ -6,21 +6,6 @@
 
 /* /button */
 
-/* ctext */
-
-    .ctext{
-        h6, h5, h4, h3, h2, h1{color:#000;margin: 0 0 20px 0;}
-        h1{font-size: 62px;}
-        h2{font-size: 40px;}
-        h3{font-size: 38px;}
-        h4{font-size: 30px;}
-        h5{font-size: 22px;}
-        h6{font-size: 16px;}
-        p{font-size: 14px;color:#000;line-height: 1.75;}
-    }
-
-/* /ctext */
-
 /* footer */
 
     .footer{padding-top: 20px; padding-bottom: 45px;
@@ -242,3 +227,48 @@
     }
 
 /* /left-column-nav */
+
+/* profesional-repair */
+
+    .professional-form{
+
+        .professional-form-wrap{display: flex;justify-content: space-between;align-items: flex-start;}
+
+        .left-side{width: calc(100% - 370px);
+            .ctext{
+                h1, h2, h3, h4, h5, h6{line-height: 1;margin-bottom: 35px;font-family: 'Museo', sans-serif;}
+                h3{font-size: 36px;font-weight: 500;}
+                p{font-size: 16px;line-height: 1.5;}
+            }
+        }
+
+        .right-side{width: 300px;
+            .form-wrapper{background-color: #eeeeee;padding:22px 42px 32px;}
+            h3{text-align: center;color:#858585;font-size: 21px;margin: 0 0 20px 0;}
+            input{width: 100%;border-color:#b0b0b0;border-style:solid;border-radius: 25px;padding:0 16px;height: 40px;line-height: 40;transition:border-color 300ms ease, box-shadow 300ms ease;
+                &::-webkit-input-placeholder {color:#000;transition:color 300ms ease;}
+                &:-moz-placeholder {color:#000;opacity:1;transition:color 300ms ease;}
+                &::-moz-placeholder {color:#000;opacity:1;transition:color 300ms ease;}
+                &:-ms-input-placeholder {color:#000;transition:color 300ms ease;}
+                &.error{border-color:#ff0000;box-shadow:0 0 5px 0 rgba(255, 0, 0, .75);
+                    &::-webkit-input-placeholder {color:#ff0000;}
+                    &:-moz-placeholder {color:#ff0000;opacity:1;}
+                    &::-moz-placeholder {color:#ff0000;opacity:1;}
+                    &:-ms-input-placeholder {color:#ff0000;}
+                    &+.errorText{display: none!important;}
+                }
+            }
+
+            .form_row{margin-bottom: 12px;
+                &.submit_row{margin-bottom: 0;
+                    .button{width: 100%;max-width: none;border:none;background-color: #2c81db;font-size: 14px;
+                        &:hover{background-color: #16599f;}
+                    }
+                }
+            }
+
+        }
+
+    }
+
+/* /profesional-repair */

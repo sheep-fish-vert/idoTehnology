@@ -14,14 +14,29 @@
 /* ctext */
 
     .ctext{
-        h1, h2, h3, h4, h5, h6{line-height: 1.25;margin-bottom: 15px;font-weight: 700;}
-        h1{font-size: 36px;}
-        h2{font-size: 32px;}
-        h3{font-size: 28px;}
-        h4{font-size: 24px;}
-        h5{font-size: 20px;}
+        h6, h5, h4, h3, h2, h1{color:#000;margin: 0 0 20px 0;line-height: 1.25;margin-bottom: 15px;font-weight: 700;}
+        h1{font-size: 62px;}
+        h2{font-size: 40px;}
+        h3{font-size: 38px;}
+        h4{font-size: 30px;}
+        h5{font-size: 22px;}
         h6{font-size: 16px;}
-        p{margin-bottom: 10px;font-size: 14px;}
+        p{font-size: 14px;color:#000;line-height: 1.75;margin: 0 0 10px 0;
+            &:last-child{margin: 0;}
+        }
+    }
+
+    @media screen and (max-width: 992px){
+
+        .ctext{
+            h1{font-size: 62px;}
+            h2{font-size: 50px;}
+            h3{font-size: 38px;}
+            h4{font-size: 26px;}
+            h5{font-size: 20px;}
+            h6{font-size: 16px;}
+        }
+
     }
 
 /* /ctext */
