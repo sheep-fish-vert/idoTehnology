@@ -160,7 +160,6 @@ function headeButer(menuMobile,toggleMenu){
 $(document).ready(function() {
     //oneHeightItems();
     headeButer($('.header-mobile-button'),$('header .header-mobile .header-mobile-navigation'));
-    headeButer($('.column-nav-mobile-arrow'),$('.left-column-main'));
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
