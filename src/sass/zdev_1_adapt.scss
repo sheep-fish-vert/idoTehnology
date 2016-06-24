@@ -321,13 +321,17 @@
                         }
                     }
                     &:nth-child(3){
-                        .professional-service-text{padding:14px 0 22px 15px;
-                            .ctext{
-                                h3{margin-bottom: 32px;}
+                        td{
+                            &:first-child{
+                                .professional-services-text{padding:14px 0 22px 15px;
+                                    .ctext{
+                                        h3{margin-bottom: 32px;}
+                                    }
+                                }
+                                .profesional-services-img{
+                                    img{top: 14px;}
+                                }
                             }
-                        }
-                        .profesional-services-img{
-                            img{top: 14px;}
                         }
                     }
                     &:nth-last-child(1){
