@@ -279,7 +279,7 @@
 
         table{width: 100%;
             tr{vertical-align: middle;
-                td{height: 100%;
+                td{height: 100%;width: 50%;
                     &.background-grey{background-color: #f7f7f7;}
                 }
                 &:first-child{
@@ -305,3 +305,22 @@
     }
 
 /* /professional-services */
+
+/* professional-services-description */
+
+    .professional-services-description{padding-bottom: 85px;
+
+        .professional-description-wrap{display: flex;justify-content: space-between;align-items: flex-start;}
+
+        .professional-description-col{width: calc(50% - 30px);
+            .professional-description-text{margin-bottom: 50px;
+                &:last-child{margin-bottom: 0;}
+                &.ctext{
+                    h3{font-size: 36px;font-family: 'Museo', sans-serif;font-weight: 500;line-height: 1.05;margin-bottom: 23px;}
+                }
+            }
+        }
+
+    }
+
+/* /professional-services-description */

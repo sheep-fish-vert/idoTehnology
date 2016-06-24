@@ -158,7 +158,7 @@
 
                         }
                     }
-                    td{padding:20px 0 20px 0;
+                    td{padding:20px 0 20px 0;width: 100%;
                         &:first-child{background-color: #e6eaed!important;}
                         &.background-grey{background-color: #fff;}
                     }
@@ -171,6 +171,27 @@
         }
 
     /* /professional-sevices */
+
+    /* professional-services-description */
+
+        .professional-services-description{
+
+            .professional-description-wrap{display: block;
+                .professional-description-col{width: 100%;margin-bottom: 50px;
+                    &:last-child{margin-bottom: 0;}
+                    .professional-description-text{
+                        &.ctext{
+                            h3{
+                                br{display: none;}
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    /* /professional-services-description */
 
 }
 @media screen and (max-width: 768px){
@@ -265,6 +286,20 @@
         }
 
     /* /professional-sevices */
+
+    /* professional-services-description */
+
+        .professional-services-description{
+            .professional-description-col{
+                .professional-description-text{
+                    &.ctext{
+                        h3{font-size: 24px;margin-bottom: 20px;line-height: 1.15;}
+                    }
+                }
+            }
+        }
+
+    /* /professional-services-description */
 
 }
 @media screen and (max-width: 479px){
