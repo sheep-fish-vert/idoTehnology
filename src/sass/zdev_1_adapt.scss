@@ -120,6 +120,18 @@
 
     /* /breadcrumbs */
 
+    /* professional-form */
+
+        .professional-form{padding-top: 15px;
+            .professional-form-wrap{display: block;}
+            .left-side{width: 100%;margin-bottom: 30px;}
+            .right-side{max-width: 340px;width: 100%;margin:0 auto;
+                .form-wrapper{padding:23px 38px 30px 38px;}
+            }
+        }
+
+    /* /professional-form */
+
 }
 @media screen and (max-width: 768px){
 
@@ -142,6 +154,19 @@
             .line-text{font-size: 16px;max-width: 206px;}
         }
     }
+
+    /* professional-form */
+
+        .professional-form{
+            .left-side{
+                .ctext{
+                    h3{font-size: 26px;}
+                    p{font-size: 14px;}
+                }
+            }
+        }
+
+    /* /professional-form */
 
 }
 @media screen and (max-width: 666px){

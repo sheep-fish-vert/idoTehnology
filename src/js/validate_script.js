@@ -282,6 +282,7 @@ $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('#call-popup2 .contact-form2', {submitFunction:validationCall});
+   validate('.profesional-form-main', {submitFunction:validationCall});
    Maskedinput();
    fancyboxForm();
    fancyboxForm2();
