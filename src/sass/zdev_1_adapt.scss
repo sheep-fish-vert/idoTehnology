@@ -178,7 +178,7 @@
 
             .professional-description-wrap{display: block;
                 .professional-description-col{width: 100%;margin-bottom: 50px;
-                    &:last-child{margin-bottom: 0;}
+                    &:last-child{margin-bottom: 0;padding-left: 0;}
                     .professional-description-text{
                         &.ctext{
                             h3{
@@ -219,12 +219,16 @@
     /* professional-form */
 
         .professional-form{
-            .left-side{
+
+            .left-side{margin-bottom: 24px;
                 .ctext{
-                    h3{font-size: 26px;}
+                    h3{font-size: 24px;margin-bottom: 17px;}
                     p{font-size: 14px;}
                 }
             }
+
+            .professional-form-wrap{padding-bottom: 44px;}
+
         }
 
     /* /professional-form */
@@ -255,7 +259,7 @@
 
     /* professional-sevices */
 
-        .professional-sevices{
+        .professional-sevices{margin-bottom: 31px;
             table{
                 tr{
                     &:first-child{
@@ -281,7 +285,11 @@
                 }
             }
 
-            .professional-services-text{padding:20px 0 20px 15px;width: calc(100% - 150px);position: relative;z-index: 1;}
+            .professional-services-text{padding:38px 0 25px 15px;width: calc(100% - 140px);position: relative;z-index: 1;
+                .ctext{
+                    h3{line-height: 0.8;margin-bottom: 22px;}
+                }
+            }
             .profesional-services-img{position: absolute;right:0;top:50%;transform:translate(30%, -50%);}
         }
 
@@ -293,7 +301,8 @@
             .professional-description-col{
                 .professional-description-text{
                     &.ctext{
-                        h3{font-size: 24px;margin-bottom: 20px;line-height: 1.15;}
+                        h3{font-size: 24px;margin-bottom: 19px;line-height: 1.05;}
+                        p{line-height: 1.5;}
                     }
                 }
             }
