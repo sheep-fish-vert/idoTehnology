@@ -275,7 +275,24 @@
 
 /* professional-services */
 
-    .professional-services{
+    .professional-sevices{margin-bottom: 74px;
+
+        table{
+            tr{vertical-align: middle;
+                td{height: 100%;
+                    &.background-grey{background-color: #f7f7f7;}
+                }
+            }
+        }
+
+        .professional-serices-item{display: flex;justify-content: space-between;align-items: center;}
+        .professional-services-text{padding:20px 0 20px 48px;width: 300px;
+            .ctext{
+                h3{font-family: 'Museo', sans-serif;font-weight: 500;font-size: 30px;line-height: 1;}
+                p{line-height:1.5;}
+            }
+            .professional-services-price{padding-top: 22px;font-size:20px;font-weight: 700;color:#2b81da;}
+        }
 
     }
 
