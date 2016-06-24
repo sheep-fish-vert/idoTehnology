@@ -277,15 +277,22 @@
 
     .professional-sevices{margin-bottom: 74px;
 
-        table{
+        table{width: 100%;
             tr{vertical-align: middle;
                 td{height: 100%;
                     &.background-grey{background-color: #f7f7f7;}
                 }
+                &:first-child{
+                    td:first-child{
+                       .profesional-services-img{position: absolute;top:0;right: 0;bottom: 0;overflow: hidden;
+                            img{max-width: none;min-height: 100%;}
+                       }
+                    }
+                }
             }
         }
 
-        .professional-serices-item{display: flex;justify-content: space-between;align-items: center;}
+        .professional-serices-item{display: flex;justify-content: space-between;align-items: center;position: relative;}
         .professional-services-text{padding:20px 0 20px 48px;width: 300px;
             .ctext{
                 h3{font-family: 'Museo', sans-serif;font-weight: 500;font-size: 30px;line-height: 1;}
@@ -293,6 +300,7 @@
             }
             .professional-services-price{padding-top: 22px;font-size:20px;font-weight: 700;color:#2b81da;}
         }
+        .profesional-services-img{width: calc(100% - 320px);text-align: center;}
 
     }
 
