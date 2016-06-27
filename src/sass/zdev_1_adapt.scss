@@ -160,12 +160,20 @@
 
     /* /breadcrumbs */
 
+    /* profesional-repair-global */
+
+        .profesional-repair-global{
+            .blue-block-wrap{margin-bottom: 20px;}
+        }
+
+    /* /profesional-repair-global */
+
     /* professional-form */
 
         .professional-form{padding-top: 15px;
             .professional-form-wrap{display: block;}
             .left-side{width: 100%;margin-bottom: 30px;margin-left: 0;}
-            .right-side{max-width: 340px;width: 100%;margin:0 auto;margin-right: 0;
+            .right-side{max-width: 340px;width: 100%;margin:0 auto;
                 .form-wrapper{padding:23px 38px 30px 38px;}
             }
         }
@@ -345,7 +353,7 @@
                                     }
                                 }
                                 .profesional-services-img{
-                                    img{top:14px;right:42px;max-width: none;}
+                                    img{top:0;right:0;max-width: none;position: absolute;}
                                 }
                             }
                         }
@@ -359,7 +367,7 @@
                                     }
                                 }
                                 .profesional-services-img{
-                                    img{top:-15px;right:31px;}
+                                    img{top:0;right:0;position: absolute;}
                                 }
                             }
                             &:last-child{
@@ -369,7 +377,7 @@
                                     }
                                 }
                                 .profesional-services-img{
-                                    img{top:25px;right:45px;}
+                                    img{top:0px;right:0;position: absolute;}
                                 }
                             }
                         }
@@ -383,7 +391,7 @@
                                     }
                                 }
                                 .profesional-services-img{
-                                    img{top: 0px;right:58px;}
+                                    img{top: 0px;right:0;position: absolute;}
                                 }
                             }
                         }
@@ -391,7 +399,7 @@
                     &:nth-last-child(1){
 
                         .profesional-services-img{
-                            img{transform:rotateY(180deg);}
+                            img{transform:rotateY(180deg);position: absolute;}
                         }
 
                     }
@@ -399,7 +407,7 @@
                         td{
                             &:last-child{
                                 .profesional-services-img{
-                                    img{transform:rotateY(180deg);}
+                                    img{transform:rotateY(180deg);position: absolute;}
                                 }
                             }
                         }
@@ -414,7 +422,7 @@
                 }
             }
             .profesional-services-img{position: absolute;right:0;top:50%;transform:translate(30%, -50%);height: calc(100% + 40px);width: 180px;
-                a{display: block;}
+                a{display: block;max-height: 100%;height: 100%;}
                 img{min-height: 0;max-height: 100%;max-width: none;}
             }
         }
@@ -498,6 +506,63 @@
         }
 
     /* /blue-block-wrap */
+
+    /* profesional-repair-global */
+
+        .profesional-repair-global{
+
+            .blue-block-wrap{padding-top: 4px;
+                h1{margin-left: 0;margin-bottom: 19px;}
+            }
+
+        }
+
+    /* /profesional-repair-global */
+
+    /* professional-sevices */
+
+        .professional-sevices{
+
+            table {
+                tr{
+                    &:first-child{
+                        td{
+                            &:last-child {
+                                .profesional-services-img{
+                                    img{right:-60px;}
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        td{
+                            &:first-child{
+                                .profesional-services-img{
+                                    img{right:-60px;}
+                                }
+                            }
+                            &:last-child{
+                                .profesional-services-img{
+                                    img{right:-60px;}
+                                }
+                            }
+                        }
+                    }
+                    &:last-child{
+                        td{
+                            &:first-child{
+                                .profesional-services-img{
+                                    img{right:-60px;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    /* /professional-sevices */
 
 }
 @media screen and (max-width: 320px){
