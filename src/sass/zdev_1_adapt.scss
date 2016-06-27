@@ -120,7 +120,7 @@
     /* blue-block */
 
         .blue-block-wrap{margin-bottom: 20px;padding-top: 19px;
-            h1{margin-left: -4px;line-height: 1.2;}
+            h1{margin-left: -4px;line-height: 1;}
         }
 
     /* /blue-block */
@@ -135,8 +135,8 @@
 
         .professional-form{padding-top: 15px;
             .professional-form-wrap{display: block;}
-            .left-side{width: 100%;margin-bottom: 30px;}
-            .right-side{max-width: 340px;width: 100%;margin:0 auto;
+            .left-side{width: 100%;margin-bottom: 30px;margin-left: 0;}
+            .right-side{max-width: 340px;width: 100%;margin:0 auto;margin-right: 0;
                 .form-wrapper{padding:23px 38px 30px 38px;}
             }
         }
@@ -225,22 +225,7 @@
         }
     }
 
-    /* professional-form */
 
-        .professional-form{
-
-            .left-side{margin-bottom: 24px;
-                .ctext{
-                    h3{font-size: 24px;margin-bottom: 17px;}
-                    p{font-size: 14px;}
-                }
-            }
-
-            .professional-form-wrap{padding-bottom: 44px;}
-
-        }
-
-    /* /professional-form */
 
 }
 @media screen and (max-width: 666px){
@@ -261,10 +246,27 @@
     /* blue-block-wrap */
 
         .blue-block-wrap{
-            h1{font-size: 40px;}
+            h1{font-size: 40px;line-height: 1.2;}
         }
 
     /* /blue-block-wrap */
+
+    /* professional-form */
+
+        .professional-form{
+
+            .left-side{margin-bottom: 24px;
+                .ctext{
+                    h3{font-size: 24px;margin-bottom: 17px;}
+                    p{font-size: 14px;}
+                }
+            }
+
+            .professional-form-wrap{padding-bottom: 44px;}
+
+        }
+
+    /* /professional-form */
 
     /* professional-sevices */
 
@@ -279,10 +281,7 @@
                                         p{font-size: 14px;line-height: 1.45;}
                                     }
                                 }
-                                .profesional-services-img{position: absolute;height: 100%;transform:translate(0, 0);
-                                    &:before{content:'';display: block;position:absolute;background-image:url(../images/professional-services-img1-mobile.png);width: 145px;height: 187px;background-repeat: no-repeat;right:0;bottom:0;}
-                                    img{display: none;}
-                                }
+                                .profesional-services-img{position: absolute;height: 100%;transform:translate(0, 0);width: 140px;}
                             }
                             &:last-child{
                                 .professional-services-text{padding:15px 0 1px 14px;
@@ -291,7 +290,7 @@
                                     }
                                 }
                                 .profesional-services-img{
-                                    img{top:14px;right:11px;}
+                                    img{top:14px;right:42px;max-width: none;}
                                 }
                             }
                         }
@@ -305,7 +304,7 @@
                                     }
                                 }
                                 .profesional-services-img{
-                                    img{top:15px;right:-4px;}
+                                    img{top:-15px;right:31px;}
                                 }
                             }
                             &:last-child{
@@ -315,7 +314,7 @@
                                     }
                                 }
                                 .profesional-services-img{
-                                    img{top:25px;right:-5px;}
+                                    img{top:25px;right:45px;}
                                 }
                             }
                         }
@@ -329,14 +328,14 @@
                                     }
                                 }
                                 .profesional-services-img{
-                                    img{top: 14px;}
+                                    img{top: 0px;right:58px;}
                                 }
                             }
                         }
                     }
                     &:nth-last-child(1){
 
-                        .profesional-services-img{transform:translate(20%, -50%);
+                        .profesional-services-img{
                             img{transform:rotateY(180deg);}
                         }
 
@@ -359,7 +358,10 @@
                     h3{line-height: 0.8;margin-bottom: 22px;}
                 }
             }
-            .profesional-services-img{position: absolute;right:0;top:50%;transform:translate(30%, -50%);}
+            .profesional-services-img{position: absolute;right:0;top:50%;transform:translate(30%, -50%);height: calc(100% + 40px);width: 180px;
+                a{display: block;}
+                img{min-height: 0;max-height: 100%;max-width: none;}
+            }
         }
 
     /* /professional-sevices */
