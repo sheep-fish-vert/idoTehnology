@@ -423,6 +423,13 @@
 
 /* about-company-block */
 
+    .about-company-block{
+        .about-company-block-wrap{columns:2;
+            .ctext{margin-bottom: 75px;
+                h3{font-size: 30px;margin-bottom: 32px;}
+            }
+        }
 
+    }
 
 /* /about-company-block */
