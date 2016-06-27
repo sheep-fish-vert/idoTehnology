@@ -178,7 +178,12 @@
                     &:last-child{margin-right: 0;}
                     a{font-size: 18px;color:#fff;font-family: 'Museo', sans-serif;text-decoration: none;padding-bottom: 21px;display: block;position: relative;
                         &:after{content:'';display: block;position: absolute;bottom: 0;left:0;width: 100%;height: 4px;background-color: #48fefc;transform:scale(0);transition:all 300ms ease;}
-                        &:hover, &.active{
+                        &:hover{
+                            &:after{transform:scale(1);}
+                        }
+                    }
+                    &.active{
+                        a{
                             &:after{transform:scale(1);}
                         }
                     }

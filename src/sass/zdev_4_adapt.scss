@@ -79,7 +79,7 @@
 }
 @media screen and (max-width: 992px){
     /*header*/
-    header{background-color: #2b81da;position: relative;z-index: 2;
+    header{background-color: #2b81da;position: relative;z-index: 3;
         .header-desctop{display: none;}
         .header-mobile{display: flex;flex-direction:row;align-items:center;justify-content: space-between;height: 111px;
             .header-mobile-button{position: relative;height: 67px;width: 78px;background-color: #48fefc;cursor: pointer;z-index: 5;transition:right ease-out .2s;order:3;margin-right: -15px;

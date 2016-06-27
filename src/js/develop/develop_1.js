@@ -43,6 +43,20 @@
 
 /* /services show-hide left-column nav */
 
+/* show menu blue-block */
+
+    function headerButterNav(arrow, content){
+
+        if(content.is('.active')){
+            content.stop().slideDown(300);
+        }else{
+            content.stop().slideUp(300);
+        }
+
+    };
+
+/* /show menu blue-block */
+
 $(document).ready(function(){
 
     showHideServicesLeft();

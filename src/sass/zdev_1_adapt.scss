@@ -119,8 +119,37 @@
 
     /* blue-block */
 
-        .blue-block-wrap{margin-bottom: 20px;padding-top: 19px;
+        .blue-block-wrap{margin-bottom: 20px;padding-top: 19px;z-index: 2;
+
             h1{margin-left: -4px;line-height: 1;}
+
+            .blue-block-nav{position: relative;height: 50px;
+
+                .mobile-arrow{display: block;position: relative;width: 35px;height: 35px;margin: 0 auto;cursor:pointer;
+                    &:before, &:after{content:'';display: block;width: 20px;height: 4px;background-color: #fff;position:absolute;top:calc(50% - 2px);transform-origin:50% 50%;transition:all 300ms ease;}
+                    &:before{left:calc(50% - 17px);transform:rotate(45deg) translateZ(0px);}
+                    &:after{left:calc(50% - 5px);transform:rotate(-45deg) translateZ(0px);}
+                    &:hover, &.active{
+                        &:before, &:after{background-color: #48fefc;}
+                    }
+                    &.active{
+                        &:before{left:8px;}
+                        &:after{left:calc(50% - 10px);}
+                    }
+                }
+
+                nav{position: absolute;top:100%;left:0;width: calc(100% + 30px);margin:0 -15px;padding: 0 15px 15px 15px;background-color: #2b81da;display: none;
+                    ul{display: block;
+                        li{margin-right: 0;text-align: center;padding:10px 0;
+                            a{padding-bottom: 0;
+                                &:after{top:calc(100% + 10px);width: 60px;left:calc(50% - 30px);}
+                            }
+                        }
+                    }
+                }
+
+            }
+
         }
 
     /* /blue-block */
@@ -201,6 +230,32 @@
         }
 
     /* /professional-services-description */
+
+    /* about-company blue-block-wrap */
+
+        .about-company-global{
+
+            .blue-block-wrap{position: relative;z-index: 2;
+
+                h1{margin-bottom: 15px;}
+
+            }
+
+        }
+
+    /* /about-company blue-block-wrap */
+
+    /* about-company-block */
+
+        .about-company-block{
+            .about-company-block-wrap{flex-wrap:wrap;justify-content: center;
+                .about-company-block-column{width: 100%;max-width: 768px;
+                    &:last-child{padding-left:0;margin-top: 0;}
+                }
+            }
+        }
+
+    /* /about-company-block */
 
 }
 @media screen and (max-width: 768px){

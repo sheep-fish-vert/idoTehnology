@@ -124,12 +124,15 @@ function bindExample(){
 }
 
 /*header buter*/
-function headeButer(menuMobile,toggleMenu){
+function headeButer(menuMobile,toggleMenu, callbackFunction){
     if(menuMobile){
         menuMobile.click(function(event) {
             if($(window).width()<992-$.scrollbarWidth()){
                 $(this).toggleClass('active');
                 toggleMenu.toggleClass('active');
+                if(typeof callbackFunction == 'function'){
+                    callbackFunction($(this), toggleMenu);
+                }
             }
         });
 
@@ -140,6 +143,9 @@ function headeButer(menuMobile,toggleMenu){
                     {
                         menuMobile.removeClass('active');
                         toggleMenu.removeClass('active');
+                        if(typeof callbackFunction == 'function'){
+                            callbackFunction($(this), toggleMenu);
+                        }
                     }
             }
         });
@@ -160,6 +166,7 @@ function headeButer(menuMobile,toggleMenu){
 $(document).ready(function() {
     //oneHeightItems();
     headeButer($('.header-mobile-button'),$('header .header-mobile .header-mobile-navigation'));
+    headeButer($('.blue-block-nav .mobile-arrow'), $('.blue-block-nav nav'), headerButterNav);
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
