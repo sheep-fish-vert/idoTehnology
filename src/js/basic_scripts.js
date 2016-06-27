@@ -149,6 +149,16 @@ function headeButer(menuMobile,toggleMenu, callbackFunction){
                     }
             }
         });
+
+        $(window).resize(function(){
+
+            if($(window).width() >= 922-$.scrollbarWidth()){
+                menuMobile.removeClass('active');
+                toggleMenu.removeClass('active').removeAttr('style');
+            }
+
+        });
+
     }
 }
 
