@@ -421,12 +421,33 @@
 
 /* /professional-services-description */
 
+/* about-company-global */
+
+    .about-company-global{
+        .blue-block-wrap{margin-bottom: 75px;
+            h1{margin-bottom: 44px;}
+        }
+    }
+
+/* /about-company-global */
+
 /* about-company-block */
 
     .about-company-block{
-        .about-company-block-wrap{columns:2;
-            .ctext{margin-bottom: 75px;
-                h3{font-size: 30px;margin-bottom: 32px;}
+        .about-company-block-wrap{display: flex;justify-content: space-between;align-items: flex-start;
+            .about-company-block-column{width: 50%;
+                &:last-child{padding-left:44px;margin-top: -10px;
+                    .ctext{
+                        &:first-child{margin-bottom: 60px;}
+                    }
+                }
+            }
+            .ctext{margin-bottom: 72px;
+                h3{font-size: 30px;margin-bottom: 26px;font-weight: 500;line-height: 1;}
+                h2{font-size: 36px;margin-bottom: 19px;}
+                p{font-size: 16px;line-height: 1.5;}
+                ul{padding: 15px 0 0 0;}
+
             }
         }
 
