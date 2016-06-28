@@ -192,11 +192,12 @@
         }
 
         .blue-block-wrap-descript{display: flex;justify-content: space-between;align-items: flex-end;
-            .blue-block-wrap-descript-text{width: 600px;color:#fff;padding-bottom: 210px;
+            .blue-block-wrap-descript-text{width: 587px;color:#fff;padding-bottom: 202px;
+                h1{margin-bottom: 32px;}
                 p{font-size: 14px;line-height: 1.75;}
             }
-            .blue-block-wrap-descript-img{width: calc(100% - 600px);text-align: right;
-                img{margin-bottom: -50px;}
+            .blue-block-wrap-descript-img{width: calc(100% - 613px);text-align: right;
+                img{margin-bottom: -51px;margin-right: -15px;}
             }
         }
 
@@ -475,7 +476,7 @@
 
 /* professional-for-home */
 
-    .professional-for-home{margin-top: -210px;margin-bottom: 66px;
+    .professional-for-home{margin-top: -217px;margin-bottom: 66px;
 
         .col-w-1{width: 25%;}
         .col-w-2{width: 50%;}
@@ -517,7 +518,7 @@
                             a{color:#2b81da;}
                             &:before{background-color: #2b81da;}
                         }
-                        p{color:#000000;
+                        p{color:#000000;font-weight: 700;font-size: 16px;
                             span{color:#a6a6a6;}
                         }
                     }
@@ -537,15 +538,15 @@
                 }
 
             }
-            .professional-for-home-col-wrap{position: relative;z-index: 2;width: calc(100% - 50px);margin:0 auto;
+            .professional-for-home-col-wrap{position: relative;z-index: 2;width: calc(100% - 38px);margin:0 auto;left:12px;
                 a{text-decoration: none;color:#fff;
                     &:hover{text-decoration: underline;}
                 }
-                h2{position: relative;padding-top: 18px;text-transform: uppercase;font-size: 16px;line-height: 1.5;margin:0 0 30px 0;
+                h2{position: relative;padding-top: 17px;text-transform: uppercase;font-size: 16px;line-height: 1.5;margin:0 0 42px 0;max-width: 250px;
                     a{transition:color 300ms ease;}
                     &:before{content:'';display: block;position: absolute;top:0;left:0;width: 80px;height: 4px;transition:background-color 300ms ease;}
                 }
-                p{font-weight: 600;font-size: 14px;letter-spacing:-0.5px;margin:0 0 17px 0;transition:color 300ms ease;
+                p{font-weight: 600;font-size: 14px;margin:0 0 20px 0;transition:color 300ms ease;
                     span{font-weight: 700;transition:color 300ms ease;}
                     &:last-child{margin-bottom: 0;}
                 }
