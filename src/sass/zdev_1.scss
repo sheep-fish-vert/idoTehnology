@@ -545,12 +545,13 @@
             /* /bad styles */
 
         }
+
         .professional-for-home-col{position: relative;overflow: hidden;
 
             &.hover{padding:50px 0px 0 0px;
                 &:before{content:'';display: block;position: absolute;top:0;left:0;bottom:0;right:0;z-index: 1;opacity:0;transition:opacity 300ms ease;}
                 &.light-blue-hover{
-                    &:before{background-color: rgba(9, 52, 96, .6);}
+                    &:before{background-color: rgba(12, 51, 21, .4);}
                 }
                 &.dark-blue-hover{
                     &:before{background-color: rgba(23, 32, 120, .8);}
