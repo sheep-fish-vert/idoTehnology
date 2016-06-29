@@ -539,23 +539,48 @@
 
     /* /professional-services-description */
 
+    /* professional-for-home-global */
+
+        .professional-for-home-global{
+
+            .blue-block-wrap{padding-top: 19px;
+                .blue-block-wrap-descript{
+                    .blue-block-wrap-descript-text{padding-left: 4px;margin-bottom: 49px;}
+                }
+            }
+
+        }
+
+    /* professional-for-home-global */
+
     /* professional-for-home */
 
-        .professional-for-home{padding-top: 0;margin-top: -60px;
+        .professional-for-home{padding-top: 0;margin-top: -58px;margin-bottom: 58px;
 
             .col-h-1, .col-h-2{height: auto;min-height: 293px;}
 
             .professional-for-home-col{width: 100%!important;
-                &.hover{padding:40px 0 20px 0;
+                &.hover{padding:30px 0 31px 0;min-height: 213px;
                     &:before{opacity: 1;}
+
+                    &.blue-block{
+                        .professional-for-home-col-wrap{
+                            p{
+                                span{display: inline-block;color:#fff;background-color: #2b3bda;max-width: 120px;width: 100%;height: 39px;line-height: 39px;border-radius: 25px;text-align: center;text-transform: uppercase;font-size: 12.5px;}
+                            }
+                        }
+                    }
+
                 }
                 &.blue-block{
-                    a, p, p span{color:#fff!important;}
-                    h2{
-                        &:before{background-color: #fff!important;}
-                    }
+                    &:before{opacity: 0;}
                 }
-                .professional-for-home-col-wrap{
+                .professional-for-home-col-wrap{left: 8px;
+
+                    h2{
+                        &:before{height: 3px;}
+                    }
+
                     a{text-decoration: underline;}
                 }
             }
