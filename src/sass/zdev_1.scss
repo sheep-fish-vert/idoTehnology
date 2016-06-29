@@ -483,7 +483,68 @@
         .col-h-1{height: 293px;}
         .col-h-2{height: 586px;}
 
-        .professional-for-home-row{display: flex;justify-content: space-between;align-items: flex-end;}
+        .professional-for-home-row{display: flex;justify-content: space-between;align-items: flex-end;
+
+            /* bad styles */
+
+                &.professional-for-home-row-top{
+
+                    .professional-for-home-col{
+
+                        &:nth-child(1){
+                            .professional-for-home-col{
+
+                                &:last-child{padding:53px 0 0 0;
+                                    .professional-for-home-col-wrap{
+                                        h2{margin:0 0 28px 0;}
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2){
+                            .professional-for-home-col-wrap{
+                                h2{margin:0 0 35px 0;}
+                            }
+                        }
+
+                        &:nth-child(4){
+
+                            .professional-for-home-col-wrap{
+                                p{padding-left:0;font-size: 16px;}
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                &.professional-for-home-row-bottom{
+
+                    .professional-for-home-col{
+
+                        &:nth-child(1){
+                           .professional-for-home-col-wrap{
+
+                                h2{max-width: 200px;margin: 0 0 40px 0;}
+
+                           }
+                        }
+                        &:nth-child(2){
+
+                            .professional-for-home-col-wrap{
+                                h2{margin:0 0 27px 0;}
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            /* /bad styles */
+
+        }
         .professional-for-home-col{position: relative;overflow: hidden;
 
             &.hover{padding:50px 0px 0 0px;
