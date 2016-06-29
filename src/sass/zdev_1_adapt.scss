@@ -166,9 +166,9 @@
 
                 h1{font-size: 55px;}
 
-                .blue-block-wrap-descript-text{padding-bottom: 0;width: 380px;margin-bottom: 35px;}
-                .blue-block-wrap-descript-img{width: calc(100% - 380px);
-                    img{margin-bottom: -35px;margin-right: -55px;}
+                .blue-block-wrap-descript-text{padding-bottom: 0;width: 368px;margin-bottom: 35px;}
+                .blue-block-wrap-descript-img{width: calc(100% - 319px);margin-right: -61px;
+                    img{margin-bottom: -41px;margin-right: 0px;}
                 }
             }
 
@@ -287,9 +287,28 @@
 
     /* /about-company-block */
 
+    /* professinal-for-home-global */
+
+        .professional-for-home-global{
+
+            .blue-block-wrap{padding-top: 37px;
+                .blue-block-wrap-descript{
+                    .blue-block-wrap-descript-text{padding-left: 7px;
+
+                        h1{margin-bottom: 25px;}
+
+                        p{margin-left: -3px;}
+                    }
+                }
+            }
+
+        }
+
+    /* /professinal-for-home-global */
+
     /* professional-for-home */
 
-        .professional-for-home{margin-top:0;margin-left:auto;margin-right:auto;max-width: 590px;width: 100%;padding-top: 20px;
+        .professional-for-home{margin-top:0;margin-left:auto;margin-right:auto;max-width: 618px;width: 100%;padding-top: 52px;margin-bottom: 84px;
 
             .col-w-1, .col-w-2{width: auto;}
 
@@ -300,6 +319,12 @@
                 }
                 &.professional-for-home-row-bottom{
                     .professional-for-home-col{width: 100%;}
+                }
+            }
+
+            .professional-for-home-col{
+                .professional-for-home-col-wrap{
+                    h2{font-size: 16px;}
                 }
             }
 
