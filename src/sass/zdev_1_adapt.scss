@@ -182,13 +182,13 @@
 
     /* /breadcrumbs */
 
-    /* profesional-repair-global */
+    /* professional-repair-global */
 
         .profesional-repair-global{
             .blue-block-wrap{margin-bottom: 20px;}
         }
 
-    /* /profesional-repair-global */
+    /* /professional-repair-global */
 
     /* professional-form */
 
@@ -202,7 +202,7 @@
 
     /* /professional-form */
 
-    /* professional-sevices */
+    /* professional-services */
 
         .professional-sevices{
             table, tbody, tr, td{display: block;}
@@ -220,7 +220,7 @@
                         }
                     }
                     td{padding:20px 0 20px 0;width: 100%;
-                        &:first-child{background-color: #e6eaed!important;}
+                        &:first-child{background-color: #f4f8fb!important;}
                         &.background-grey{background-color: #fff;}
                     }
                     &:nth-child(2){
@@ -238,7 +238,7 @@
 
         }
 
-    /* /professional-sevices */
+    /* /professional-services */
 
     /* professional-services-description */
 
@@ -275,6 +275,18 @@
 
     /* /about-company blue-block-wrap */
 
+    /* about-company-global */
+
+        .about-company-global{
+
+            .blue-block-wrap{margin-bottom: 20px;}
+
+            .left-column-main{margin-bottom: 30px;}
+
+        }
+
+    /* /about-company-global */
+
     /* about-company-block */
 
         .about-company-block{
@@ -287,7 +299,7 @@
 
     /* /about-company-block */
 
-    /* professinal-for-home-global */
+    /* professional-for-home-global */
 
         .professional-for-home-global{
 
@@ -304,7 +316,7 @@
 
         }
 
-    /* /professinal-for-home-global */
+    /* /professional-for-home-global */
 
     /* professional-for-home */
 
@@ -637,7 +649,7 @@
                                 .professional-for-home-col-wrap{left:6px;
                                     h2{max-width: 153px;}
                                 }
-                                .professional-for-home-col-img{top:0;left:0;}
+                                .professional-for-home-col-img{top:33px;left:-107px;}
                             }
                         }
                     }
