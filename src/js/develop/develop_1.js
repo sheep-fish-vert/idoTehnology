@@ -4,13 +4,14 @@
     function showHideServicesLeft(){
 
         $(document).on('click', function(event){
-
-            if((!$(event.target).is('.column-nav') && !$(event.target).parents('.column-nav').length) || $(event.target).is('li.active.show') || $(event.target).parents('li.active').is('show')){
-                $('.column-nav li.active').removeClass('show');
-                $('.left-column-main li:not(.active)').stop().slideUp(300);
-            }else{
-                $('.column-nav li.active').addClass('show');
-                $('.left-column-main li:not(.active)').stop().slideDown(300);
+            if($(window).width() < 992){
+                if((!$(event.target).is('.column-nav') && !$(event.target).parents('.column-nav').length) || $(event.target).is('li.active.show') || $(event.target).parents('li.active').is('show')){
+                    $('.column-nav li.active').removeClass('show');
+                    $('.left-column-main li:not(.active)').stop().slideUp(300);
+                }else{
+                    $('.column-nav li.active').addClass('show');
+                    $('.left-column-main li:not(.active)').stop().slideDown(300);
+                }
             }
 
         });
