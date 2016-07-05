@@ -637,7 +637,7 @@
                         .close-tag{width:15px;}
                     }
                     .close-tag{position: absolute;top:0;right:0%;height:100%;width:0;overflow: hidden;cursor:pointer;transition:all 300ms ease;
-                        &:before, &:after{content:'';display: block;position: absolute;left:0px;top:calc(50% - 1px);width: 14px;height:1px;background-color: #fff;transform-origin:50% 50%;}
+                        &:before, &:after{content:'';display: block;position: absolute;left:1px;top:calc(50% - 1px);width: 11px;height:1px;background-color: #fff;transform-origin:50% 50%;}
                         &:before{transform:rotate(45deg) translateZ(0px);}
                         &:after{transform:rotate(-45deg) translateZ(0px);}
                     }
