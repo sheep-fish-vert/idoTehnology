@@ -278,6 +278,75 @@ function someAjax(item, someUrl, successFunc, someData){
 
 */
 
+/* blog scripts */
+
+    function blogLoadMore(){
+
+        $(document).on('click', '.blog-load-more-button', function(e){
+
+            e.preventDefault();
+
+            var clickedButton = $(this);
+
+            if(!clickedButton.is('.loading') && !clickedButton.is('.no-items')){
+
+                clickedButton.addClass('loading');
+
+                $.ajax({
+                    url:ajaxUrl,
+                    data:{'action':'load_more_blog_items'},
+                    method:'POST',
+                    success : function(data){
+
+                        var itemsData = data;
+
+                        if(typeof data != 'object'){
+                            itemsData = $.parseJSON(data);
+                        }
+
+                        console.log(itemsData);
+
+                        $('.blog-items-main').append(itemsData.items);
+
+                        var timer = 0;
+                        var addedRowsLength = $('.blog-items-row.added').length;
+
+                        $('.blog-items-row.added').each(function(index){
+                            var itemRow = $(this);
+                            setTimeout(function(){
+                                itemRow.slideDown(300, function(){
+                                    itemRow.removeClass('added');
+                                })
+                            }, timer);
+                            timer = timer + 300;
+
+                            if(index == (addedRowsLength - 1)){
+
+                                if(itemsData.last == "true"){
+                                    clickedButton.addClass('no-items');
+                                    setTimeout(function(){
+                                        clickedButton.removeClass('loading');
+                                    }, 300);
+                                }else{
+                                    clickedButton.removeClass('loading');
+                                }
+
+                            }
+
+                        });
+
+                    }
+                });
+
+            }
+
+        });
+
+    }
+
+/* blog scripts */
+
+
 $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
@@ -286,5 +355,7 @@ $(document).ready(function(){
    Maskedinput();
    fancyboxForm();
    fancyboxForm2();
+
+   blogLoadMore();
 
 });
