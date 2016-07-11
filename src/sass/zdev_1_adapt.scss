@@ -445,25 +445,37 @@
 
 @media screen and (max-width: 768px){
 
-    .about-company{padding: 115px 0 20px 0;
-        .mbox{padding: 0 10px;
-            .about-company-text{margin: 7px auto 72px auto;
-                h2 {font-size: 40px;}
+    /* about-company */
+
+        .about-company{padding: 115px 0 20px 0;
+            .mbox{padding: 0 10px;
+                .about-company-text{margin: 7px auto 72px auto;
+                    h2 {font-size: 40px;}
+                }
+                .line-slider{padding: 0;}
             }
-            .line-slider{padding: 0;}
         }
-    }
 
-    .footer{ padding:74px 0 27px 0;
-        .footer-wrap-mobile{padding-left: 13px;}
-    }
+    /* /about-company */
 
-    .line-slider{
-        .line-item-wrap{
-            .line-img{margin-right: 16px;}
-            .line-text{font-size: 16px;max-width: 206px;}
+    /* footer */
+
+        .footer{ padding:74px 0 27px 0;
+            .footer-wrap-mobile{padding-left: 13px;}
         }
-    }
+
+    /* footer */
+
+    /* line-slider */
+
+        .line-slider{
+            .line-item-wrap{
+                .line-img{margin-right: 16px;}
+                .line-text{font-size: 16px;max-width: 206px;}
+            }
+        }
+
+    /* /line-slider */
 
 }
 
@@ -751,6 +763,37 @@
 
     /* /professional-for-home */
 
+    /* professional-blog-global */
+
+        .professional-blog-global{
+            .blue-block-wrap{
+                h1{font-size: 40px;}
+            }
+        }
+
+    /* /professional-blog-global */
+
+    /* blog */
+
+        .blog{
+
+            .blog-items-main{
+                .blog-items-row{
+                    .blog-item{
+                        .blog-item-footer{
+                            .blog-item-text{font-size: 18px;line-height: 20px;}
+                        }
+                        &.blog-item-no-background{
+                            .blog-item-text{font-size: 16px;}
+                        }
+                    }
+                }
+            }
+
+        }
+
+    /* /blog */
+
 }
 @media screen and (max-width: 479px){
 
@@ -870,6 +913,81 @@
         }
 
     /* /professional-sevices */
+
+    /* professional-blog-global */
+
+        .professional-blog-global{
+
+            .blue-block-wrap{margin-bottom: 32px;
+                h1{font-size: 30px;}
+            }
+
+            .left-column-main{padding:0;margin-bottom: 30px;
+                .column-nav{
+                    ul{
+                        li{
+                            &.active{
+                                &:after{width:9px;height:6px;background-size:9px 6px;}
+                            }
+                        }
+                    }
+                }
+            }
+
+            .blog{padding-left:0;}
+
+        }
+
+    /* /professional-blog-global */
+
+    /* blog */
+
+        .blog{
+
+            .blog-tags{display:none;}
+
+            .blog-items-main{margin-bottom:33px;
+                .blog-items-row{margin-bottom:10px;
+                    .blog-items-row-wrap{display: block;
+                        .blog-item-col{
+                            &.col-6, &.col-3, &.col-5{width:100%;}
+                        }
+                    }
+
+                    .blog-item{height:auto;min-height:200px;margin-bottom:10px;
+                        &.blog-item-no-background{margin-bottom: 10px;height:auto;min-height:120px;padding:17px 15px 5px 19px;
+                            &:last-child{margin-bottom: 10px;}
+                            .item-tag-line{display:none;}
+                            .blog-item-text{font-size: 20px;line-height:23px;}
+                        }
+
+                        .blog-item-footer{padding:0 25px 14px 19px;
+                            .item-tag-line{display:none;}
+                            .blog-item-text{font-size: 20px;line-height:23px;}
+                        }
+
+                    }
+
+                }
+            }
+
+            .blog-footer{flex-direction:column;align-items: center;justify-content: center;padding-bottom:55px;
+                .blog-load-more{margin-bottom:24px;}
+                .paginator{
+                    .paginator-prev, .paginator-next{height:36px;width:36px;
+                        a{height:36px;width:36px;}
+                    }
+                    ul{
+                        li{height:36px;width:36px;
+                            a{height:36px;width:36px;}
+                        }
+                    }
+                }
+            }
+
+        }
+
+    /* /blog */
 
 }
 @media screen and (max-width: 320px){
