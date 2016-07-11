@@ -363,7 +363,7 @@ function someAjax(item, someUrl, successFunc, someData){
                             $('.blog-load-more-button').removeClass('loading');
                         }, 300);
                     }else{
-                        $('.blog-load-more-button').removeClass('loading');
+                        $('.blog-load-more-button').removeClass('loading no-items');
                     }
 
                 }
