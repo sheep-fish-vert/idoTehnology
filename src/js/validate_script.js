@@ -313,7 +313,9 @@ function someAjax(item, someUrl, successFunc, someData){
 
         });
 
-        $(document).on('click','.blog .tag', function(){
+        $(document).on('click','.blog .tag', function(e){
+
+            e.preventDefault();
 
             $('.blog-items-row').remove();
             var tagLoad = $(this).attr('data-tag');
