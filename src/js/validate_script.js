@@ -304,36 +304,7 @@ function someAjax(item, someUrl, successFunc, someData){
                             itemsData = $.parseJSON(data);
                         }
 
-                        console.log(itemsData);
-
-                        $('.blog-items-main').append(itemsData.items);
-
-                        var timer = 0;
-                        var addedRowsLength = $('.blog-items-row.added').length;
-
-                        $('.blog-items-row.added').each(function(index){
-                            var itemRow = $(this);
-                            setTimeout(function(){
-                                itemRow.slideDown(300, function(){
-                                    itemRow.removeClass('added');
-                                })
-                            }, timer);
-                            timer = timer + 300;
-
-                            if(index == (addedRowsLength - 1)){
-
-                                if(itemsData.last == "true"){
-                                    clickedButton.addClass('no-items');
-                                    setTimeout(function(){
-                                        clickedButton.removeClass('loading');
-                                    }, 300);
-                                }else{
-                                    clickedButton.removeClass('loading');
-                                }
-
-                            }
-
-                        });
+                        blogJson(itemsData, 'items');
 
                     }
                 });
@@ -341,6 +312,65 @@ function someAjax(item, someUrl, successFunc, someData){
             }
 
         });
+
+        $(document).on('click','.blog .tag', function(){
+
+            $('.blog-items-row').remove();
+            var tagLoad = $(this).attr('data-tag');
+            
+            clickedButton.addClass('loading');
+
+            $.ajax({
+                url:ajaxUrl,
+                data:{'action':'load_tag_items', 'tag_load':tagLoad},
+                method:'POST',
+                success: function(data){
+
+                    var tagsData = data;
+
+                    if(typeof data != 'object'){
+                        tagsData = $.parseJSON(data);
+                    }
+
+                    blogJson(tagsData, tagLoad);
+
+                }
+            });
+
+        });
+
+        function blogJson(json, param){
+
+            $('.blog-items-main').append(json[param]);
+
+            var timer = 0;
+            var addedRowsLength = $('.blog-items-row.added').length;
+
+            $('.blog-items-row.added').each(function(index){
+                var itemRow = $(this);
+                setTimeout(function(){
+                    itemRow.slideDown(300, function(){
+                        itemRow.removeClass('added');
+                    })
+                }, timer);
+                timer = timer + 300;
+
+                if(index == (addedRowsLength - 1)){
+
+                    if(json.last == "true"){
+                        clickedButton.addClass('no-items');
+                        setTimeout(function(){
+                            clickedButton.removeClass('loading');
+                        }, 300);
+                    }else{
+                        clickedButton.removeClass('loading');
+                    }
+
+                }
+
+            });
+
+        };
 
     }
 
