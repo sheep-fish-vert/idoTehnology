@@ -317,8 +317,8 @@ function someAjax(item, someUrl, successFunc, someData){
 
             $('.blog-items-row').remove();
             var tagLoad = $(this).attr('data-tag');
-            
-            clickedButton.addClass('loading');
+
+            $('.blog-load-more-button').addClass('loading');
 
             $.ajax({
                 url:ajaxUrl,
@@ -358,12 +358,12 @@ function someAjax(item, someUrl, successFunc, someData){
                 if(index == (addedRowsLength - 1)){
 
                     if(json.last == "true"){
-                        clickedButton.addClass('no-items');
+                        $('.blog-load-more-button').addClass('no-items');
                         setTimeout(function(){
-                            clickedButton.removeClass('loading');
+                            $('.blog-load-more-button').removeClass('loading');
                         }, 300);
                     }else{
-                        clickedButton.removeClass('loading');
+                        $('.blog-load-more-button').removeClass('loading');
                     }
 
                 }
