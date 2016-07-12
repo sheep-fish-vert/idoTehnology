@@ -448,6 +448,12 @@
 
         .another-line-slider{margin-bottom: 77px;}
 
+        .line-slider{
+            .line-item-wrap{
+                .line-text{max-width:195px;}
+            }
+        }
+
     }
 
 /* /about-company-global */
