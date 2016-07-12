@@ -21,6 +21,23 @@
     /* professional-services */
 
 }
+@media screen and (max-width:1170px){
+
+    /* blue-block */
+
+        .blue-block-wrap{
+
+            .blue-block-wrap-descript{
+                .blue-block-wrap-descript-img{margin-right:-120px;
+                    img{margin-bottom:-51px;}
+                }
+            }
+
+        }
+
+    /* /blue-block */
+
+}
 @media screen and (max-width: 1024px){
 
     /* footer */
@@ -168,7 +185,7 @@
 
                 .blue-block-wrap-descript-text{padding-bottom: 0;width: 368px;margin-bottom: 35px;}
                 .blue-block-wrap-descript-img{width: calc(100% - 319px);margin-right: -61px;
-                    img{margin-bottom: -41px;margin-right: 0px;}
+                    img{margin-bottom: -81px;margin-right: 0px;}
                 }
             }
 
@@ -303,7 +320,7 @@
 
         .professional-for-home-global{
 
-            .blue-block-wrap{padding-top: 37px;
+            .blue-block-wrap{padding-top: 37px;margin-bottom:50px;
                 .blue-block-wrap-descript{
                     .blue-block-wrap-descript-text{padding-left: 7px;
 
@@ -361,7 +378,9 @@
 
                 &.professional-for-home-row-top, &.professional-for-home-row-bottom{flex-wrap:wrap;}
                 &.professional-for-home-row-top{
-                    &>.professional-for-home-col{width: 50%;}
+                    &>.professional-for-home-col{width: 50%;
+                        &:last-child{width:100%;}
+                    }
                 }
                 &.professional-for-home-row-bottom{
                     .professional-for-home-col{width: 100%;}
@@ -485,7 +504,13 @@
 
         .blue-block-wrap{
 
-            .blue-block-wrap-descript{align-items: flex-end;}
+            .blue-block-wrap-descript{align-items: flex-end;
+                
+                .blue-block-wrap-descript-img{
+                    img{margin-bottom:-48px;}
+                }
+                
+            }
 
         }
 
@@ -664,6 +689,8 @@
 
         .professional-for-home-global{
 
+            .blue-block-wrap{margin-bottom:20px;}
+
             .blue-block-wrap{padding-top: 19px;
                 .blue-block-wrap-descript{
                     .blue-block-wrap-descript-text{padding-left: 4px;margin-bottom: 49px;}
@@ -694,7 +721,11 @@
                                     &:last-child{padding:34px 0 0 0;
                                         .professional-for-home-col-wrap{left:6px;
                                             h2{margin:0 0 19px 0;}
-                                            p{margin:0 0 0 -2px;}
+                                            p{margin:0 0 0 -2px;
+                                                .button{
+                                                    span{max-width:none;}
+                                                }
+                                            }
                                         }
                                         .professional-for-home-col-img{top: 19px;left: 2px;}
                                     }
@@ -706,7 +737,7 @@
                             }
                             &:nth-child(3){min-height: 223px;
                                 .professional-for-home-col-wrap{left:7px;}
-                                .professional-for-home-col-img{top:13px;}
+                                .professional-for-home-col-img{top:-1px;}
                             }
                             &:nth-child(4){min-height: 181px;
                                 .professional-for-home-col-img{top:34px;}
@@ -718,11 +749,11 @@
                         .professional-for-home-col{
                             &:first-child{padding:28px 0 40px 0;
                                 .professional-for-home-col-wrap{left:8px;}
-                                .professional-for-home-col-img{top:14px;left:-60px;}
+                                .professional-for-home-col-img{top:6px;left:-1px;}
                             }
                             &:last-child{padding:31px 0 40px 0;
                                 .professional-for-home-col-wrap{left:6px;
-                                    h2{max-width: 153px;}
+                                    h2{max-width: 166px;}
                                 }
                                 .professional-for-home-col-img{top:33px;left:-107px;}
                             }
@@ -740,7 +771,7 @@
                     &.blue-block{
                         .professional-for-home-col-wrap{
                             p{
-                                span{display: inline-block;color:#fff;background-color: #2b3bda;max-width: 120px;width: 100%;height: 39px;line-height: 39px;border-radius: 25px;text-align: center;text-transform: uppercase;font-size: 12.5px;}
+                                span{display: inline-block;color:#fff;max-width: none;width: 100%;height: 39px;line-height: 39px;border-radius: 25px;text-align: center;text-transform: uppercase;font-size: 12.5px;}
                             }
                         }
                     }
@@ -939,6 +970,40 @@
         }
 
     /* /professional-blog-global */
+
+    /* professional-for-home */
+
+        .professional-for-home{
+
+            .professional-for-home-col{
+                .professional-for-home-columns{display: block;
+                    .professional-for-home-column-wrap{width:100%;padding:0;}
+                }
+            }
+
+            .professional-for-home-row{
+
+                /* bad styles */
+
+                    &.professional-for-home-row-top{
+                        .professional-for-home-col:nth-child(3){
+                            .professional-for-home-col-wrap{
+                                .professional-for-home-columns{
+                                    .professional-for-home-column-wrap{
+                                        &:last-child{padding:0;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                /* /bad styles */
+
+            }
+
+        }
+
+    /* /professional-for-home */
 
     /* blog */
 
