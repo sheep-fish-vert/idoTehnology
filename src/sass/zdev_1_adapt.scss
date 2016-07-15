@@ -1051,7 +1051,20 @@
             }
 
         }
-
+    
+        .blog-footer{flex-direction:column;align-items: center;justify-content: center;padding-bottom:55px;
+                .blog-load-more{margin-bottom:24px;}
+                .paginator{
+                    .paginator-prev, .paginator-next{height:36px;width:36px;
+                        a{height:36px;width:36px;}
+                    }
+                    ul{
+                        li{height:36px;width:36px;
+                            a{height:36px;width:36px;}
+                        }
+                    }
+                }
+            }
     /* /blog */
 
 }
