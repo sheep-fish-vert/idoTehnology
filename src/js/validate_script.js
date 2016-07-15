@@ -225,6 +225,17 @@ function fancyboxForm2(){
     })
 }
 
+function fancyboxForm3(){
+    $('.fancybox-form3').fancybox({
+        openEffect  : 'fade',
+        closeEffect : 'fade',
+        wrapCSS:'fancybox-wrap3',
+        fitToView   : false,
+        autoSize    : true,
+        padding:'0'
+    })
+}
+
 //ajax func for programmer
 
 function someAjax(item, someUrl, successFunc, someData){
@@ -387,6 +398,7 @@ $(document).ready(function(){
    Maskedinput();
    fancyboxForm();
    fancyboxForm2();
+   fancyboxForm3();
 
    blogLoadMore();
 
