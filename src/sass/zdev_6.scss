@@ -291,8 +291,10 @@
 		.button-wrapper{width: 100%; display: flex; justify-content: flex-end;padding: 20px 0 30px 0;
 			button{width:165px; height: 40px; background: #2b3bda;
 			font-family: 'Museo'; font-size: 12px; font-weight: 700;
-			color: #fff; border: none; border-radius: 28px; 
+			color: #fff; text-transform: uppercase; border: none; border-radius: 28px; 
+			&:hover{background: #1d2bb3;
 			 }
+			}
 		}
 	}
 }
