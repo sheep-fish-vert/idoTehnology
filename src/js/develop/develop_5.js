@@ -9,7 +9,7 @@ var map;
                 disableDefaultUI: true
             };
             map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
-            var image = 'images/marker.png';
+
             var marker = new google.maps.Marker({
                 position: myLatlng,
                 map: map,
@@ -27,7 +27,7 @@ var map;
                 controlToFullScreen.style.backgroundPosition = 'center';
                 controlToFullScreen.style.backgroundRepeat = 'no-repeat';
 
-                
+
 
                 controlToFullScreen.title = 'Click to fullscreen';
                 controlDiv.appendChild(controlToFullScreen);
