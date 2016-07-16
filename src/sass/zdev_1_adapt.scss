@@ -37,6 +37,34 @@
 
     /* /blue-block */
 
+    /* professional-for */
+
+        .professional-for-global{
+
+            /* professional-for-bisness */
+
+                &.professional-for-bisness-global{
+
+                    .professional-for-wrap{
+
+                        .professional-for-home-row{
+                            &.professional-for-home-row-top{
+                                .professional-for-home-col{
+                                    &:nth-child(3){padding:30px 0 0 0;}
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
+            /* /professional-for-bisness */
+
+        }
+
+    /* /professional-for */
+
 }
 @media screen and (max-width: 1024px){
 
@@ -415,6 +443,24 @@
                 }
 
             /* /professional-for-home */
+
+            /* professional-for-bisness */
+
+                &.professional-for-bisness-global{
+
+                    .professional-for-wrap{
+                        .professional-for-home-row{
+                            &.professional-for-home-row-top{
+                                &>.professional-for-home-col{
+                                    &:nth-child(3){width:100%;}
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            /* /professional-for-bisness */
 
         }
 
