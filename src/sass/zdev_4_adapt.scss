@@ -260,9 +260,15 @@
             .service-bottom-reviews-slider{
 
                 .item{
-                    .item-img{float: none;margin-bottom: 23px;}
+                    .item-top-wrap{float: none;margin-bottom: 23px;display: flex;justify-content: flex-start;align-items: center;
+                        .item-description-title{margin-bottom: 0;margin-left: 10px;position: relative;top:4px;}
+                    }
                     .item-description{float:none;width: 100%;}
                     .item-descript-text{line-height: 1.5;}
+                    .item-description-title{
+                        &.desktop-show{display: none;}
+                        &.mobile-show{display: block;}
+                    }
                 }
             }
 

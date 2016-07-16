@@ -348,6 +348,10 @@
 
             .left-column-main{margin-bottom: 30px;}
 
+            .another-line-slider{
+
+            }
+
         }
 
     /* /about-company-global */
@@ -550,6 +554,20 @@
 }
 
 @media screen and (max-width: 768px){
+
+    /* about-company-global */
+
+        .about-company-global{
+
+            .line-slider{
+                .line-item-wrap{
+                    .line-text{font-size: 14px;}
+                }
+            }
+
+        }
+
+    /* /about-company-global */
 
     /* about-company */
 

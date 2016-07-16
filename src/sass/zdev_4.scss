@@ -96,11 +96,15 @@ header{background-color: #2b81da;position: relative;z-index: 84;
     .service-bottom-reviews-slider{font-family: 'Muller';margin-bottom: 0;
         .item{
             &:after{content: '';display: block;clear: both;}
-            .item-img{width: 80px;height: 80px;overflow: hidden;position: relative;float: left;margin-right: 30px;margin-bottom: 60px;
-                img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);min-width: 100%;max-width: none;overflow: hidden;border-radius: 50%;}
+            .item-top-wrap{float: left;margin-right: 30px;margin-bottom: 60px;
+                .item-img{width: 80px;height: 80px;overflow: hidden;position: relative;
+                    img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);min-width: 100%;max-width: none;overflow: hidden;border-radius: 50%;}
+                }
             }
             .item-description{color: #000;padding-right: 10px;}
-            .item-description-title{font-size: 22px;margin-bottom: 13px;}
+            .item-description-title{font-size: 22px;margin-bottom: 13px;
+                &.mobile-show{display: none;}
+            }
             .item-description-text{font-size: 14px;color: rgb(0, 0, 0);line-height: 1.691;max-width: 479px;
                 p{margin: 0;}
             }
