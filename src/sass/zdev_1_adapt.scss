@@ -124,6 +124,7 @@
     /* professional-for */
 
         .professional-for-global{
+
             .professional-for-wrap{
                 .professional-for-home-col{
                     .professional-for-home-col-wrap{width: calc(100% - 30px);
@@ -131,6 +132,23 @@
                     }
                 }
             }
+
+            /* professional-for-bisness */
+
+                &.professional-for-bisness-global{
+
+                    .blue-block-wrap{
+                        .blue-block-wrap-descript{
+                            .blue-block-wrap-descript-img{
+                                img{max-width: 100%;}
+                            }
+                        }
+                    }
+
+                }
+
+            /* /professional-for-bisness */
+
         }
 
     /* /professional-for */
