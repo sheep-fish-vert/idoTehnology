@@ -298,3 +298,73 @@
 		}
 	}
 }
+
+.video-library{ margin-top: -35px;
+	.blog-tags{padding-left: 10px;
+			ul{
+				li{
+					a.tag{ padding: 5px; font-size: 11px;}
+				}
+			}
+		}
+	.video-items-row{
+
+		
+		.video-lib-items-row{ flex-wrap: nowrap; display: flex; margin-bottom: 40px;margin-left: 5px;
+			a{text-decoration: none;}
+			&:nth-child(even){
+				.text-items-row-wrap{ order: 2;
+					
+				}
+				.items-row-video-wrap{ order: 1;}
+			}
+		
+			.text-items-row-wrap{width: calc(100% * 0.35); background: #ebf0f3; padding: 20px;
+				.item-tag-line{display: flex;justify-content: flex-start;align-items: center;flex-wrap:wrap; margin-bottom: 5px;
+	                .tag{display: block;padding:5px 5px;color:#fff;font-family:'Museo', sans-serif;font-size: 11px;font-weight: 300;background-color:rgba(0, 0, 0, .6);cursor:pointer;transition:all 300ms ease;
+	                    &:hover{background-color:rgba(43, 59, 218, .7);}
+	                }
+	            }
+	            .item-heading{
+	            	a{
+	            		h3{color: #000; margin: 0 0 25px 0; line-height: 1.2;}
+	            	}
+	            }
+	            .text-conteiner{
+	            	p{margin: 0; font-size: 13px; line-height:1.5 }
+	            }
+			}
+
+			.items-row-video-wrap{width: calc(100% * 0.65);position: relative;
+				a{
+					&:hover{
+						.triangle-button{background-color:rgba(43, 59, 218, 0.8);transform: scale(1.1);
+						}
+
+					}
+					.triangle-button{ min-width: 85px; min-height: 85px; border-radius: 50%; border: 5px solid #fff;  background-color: #2b3bda; position: absolute; top: 50%; left: 50%; margin-left: -47px; margin-top: -47px; transition: 0.2s; transform-origin: center center;
+							img{position: absolute; top: 50%; left: 50%; margin-left: -11px; margin-top: -17px; 								
+							}
+						
+						// &:after{content: ""; display: block; position: absolute; border-top: 40px solid #fff; top: 13px; left: 30px; border-left: 25px solid transparent; border-bottom: 20px solid transparent; border-right: 25px solid transparent; border-radius: 5px;transform: rotate(-90deg); 
+						// } 
+						
+						
+					}
+				}
+			}
+		}
+
+	}
+}
+
+.video-library-main{
+	.blue-block-wrap{padding-top: 40px; margin-bottom: 69px;
+		.breadcrumbs{ 
+			
+		}
+		.main{margin-bottom: 14px;
+			
+		}
+	}
+}
