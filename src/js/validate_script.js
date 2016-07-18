@@ -298,6 +298,7 @@ function someAjax(item, someUrl, successFunc, someData){
             e.preventDefault();
 
             var clickedButton = $(this);
+            var nextPage = clickedButton.attr('data-next-page');
 
             if(!clickedButton.is('.loading') && !clickedButton.is('.no-items')){
 
@@ -305,7 +306,7 @@ function someAjax(item, someUrl, successFunc, someData){
 
                 $.ajax({
                     url:ajaxUrl,
-                    data:{'action':'load_more_blog_items'},
+                    data:{'action':"loading_next_page"},
                     method:'POST',
                     success : function(data){
 
@@ -315,7 +316,7 @@ function someAjax(item, someUrl, successFunc, someData){
                             itemsData = $.parseJSON(data);
                         }
 
-                        blogJson(itemsData, 'items');
+                         blogJson(itemsData, 'items');                    
 
                     }
                 });
@@ -324,7 +325,7 @@ function someAjax(item, someUrl, successFunc, someData){
 
         });
 
-        $(document).on('click','.blog .tag', function(e){
+        $(document).on('click','.tag', function(e){
 
             e.preventDefault();
 
@@ -345,16 +346,16 @@ function someAjax(item, someUrl, successFunc, someData){
                         tagsData = $.parseJSON(data);
                     }
 
-                    blogJson(tagsData, tagLoad);
+                     blogJson(tagsData, tagLoad);
 
                 }
             });
 
         });
 
-        function blogJson(json, param){
+        function blogJson(json){
 
-            $('.blog-items-main').append(json[param]);
+            $('.blog-items-main').append(json.items);
 
             var timer = 0;
             var addedRowsLength = $('.blog-items-row.added').length;
@@ -373,9 +374,13 @@ function someAjax(item, someUrl, successFunc, someData){
                     if(json.last == "true"){
                         $('.blog-load-more-button').addClass('no-items');
                         setTimeout(function(){
+                             $('.paginator').html(json.paginator);    
+                             $('.blog-load-more-button').attr("data-next-page",json.loading_page);
                             $('.blog-load-more-button').removeClass('loading');
                         }, 300);
                     }else{
+                         $('.paginator').html(json.paginator);
+                         $('.blog-load-more-button').attr("data-next-page",json.loading_page);
                         $('.blog-load-more-button').removeClass('loading no-items');
                     }
 
