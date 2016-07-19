@@ -3,8 +3,6 @@
 
     "paginator":"<div class='paginator-prev'><a href='#'></a></div><ul><li><a href='#'>1</a></li><li><a href='#'>2</a></li><li class='active'>3</li><li>...</li><li><a href='#'>8</a></li></ul><div class='paginator-next'><a href='#'></a></div>",
     
-    "loading_page":"3",
 
-    "last":"true"
 
 }

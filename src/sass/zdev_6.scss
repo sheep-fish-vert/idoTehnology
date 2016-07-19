@@ -178,6 +178,7 @@
 		}
 	}
 }
+
 .comments{
 	.comments-container{padding-bottom: 20px;
 		.comment{display: flex; background: #f8f8f8; padding: 30px 40px 20px 40px; margin-bottom: 30px;min-height: 250px; width: 100%;
@@ -365,6 +366,47 @@
 		}
 		.main{margin-bottom: 14px;
 			
+		}
+	}
+}
+
+.video-library-opened-partials{
+	.video-block-container{ background: #ebf0f3; padding: 40px 40px 0; max-width: 810px; margin: 0 auto 0 0;
+		.video-wrapper{position: relative; width: 100%;max-width: 730px; height: 100%; margin: 0 auto; z-index: 0;
+			.video-placeholder{position: absolute;top: 0;left: 0;right: 0;bottom: 0;
+				&:hover{
+						.triangle-button{background-color:rgb(53, 69, 235);transform: scale(1.1);
+						}
+
+					}
+				.triangle-button{min-width: 85px;min-height: 85px;border-radius: 50%;border: 5px solid #fff;background-color: #2b3bda;position: absolute;top: 50%;left: 50%;margin-left: -47px;margin-top: -47px;transition: 0.2s;transform-origin: center center;
+					img{position: absolute; top: 50%; left: 50%; margin-left: -11px; margin-top: -17px; 
+							}
+					
+				}
+			}
+			
+		}
+		.video-block-heading{
+			h3{}
+		}
+		.video-block-text-container{
+			p{}
+		}
+		.share-block{
+			.share-heading{ border-bottom: 1px solid #000;
+				h5{}
+			}
+			.share-socials{padding: 10px 0;
+				.pluso{ padding: 10px 0;
+					a{min-height: 40px;}
+				}
+			}
+			.sharing-link{
+				a{width: 100%; max-width: 400px;  border: 1px solid #000;padding: 10px; background: #fff;
+					span{ }
+				}
+			}
 		}
 	}
 }
