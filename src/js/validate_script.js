@@ -299,14 +299,14 @@ function someAjax(item, someUrl, successFunc, someData){
 
             var clickedButton = $(this);
             var nextPage = clickedButton.attr('data-next-page');
-
+            var whatPage = clickedButton.attr('data-what-page');
             if(!clickedButton.is('.loading') && !clickedButton.is('.no-items')){
 
                 clickedButton.addClass('loading');
 
                 $.ajax({
                     url:ajaxUrl,
-                    data:{'action':"loading_next_page"},
+                    data:{'action':"loading_next_page", 'what_page': whatPage},
                     method:'POST',
                     success : function(data){
 
@@ -331,12 +331,12 @@ function someAjax(item, someUrl, successFunc, someData){
 
             $('.blog-items-row').remove();
             var tagLoad = $(this).attr('data-tag');
-
+            var whatPage = $(this).attr('data-tag-what-page');
             $('.blog-load-more-button').addClass('loading');
 
             $.ajax({
                 url:ajaxUrl,
-                data:{'action':'load_tag_items', 'tag_load':tagLoad},
+                data:{'action':'load_tag_items', 'tag_load':tagLoad, 'what_page': whatPage},
                 method:'POST',
                 success: function(data){
 
@@ -355,7 +355,7 @@ function someAjax(item, someUrl, successFunc, someData){
 
         function blogJson(json){
 
-            $('.blog-items-main').append(json.items);
+            $('.append-here').append(json.items);
 
             var timer = 0;
             var addedRowsLength = $('.blog-items-row.added').length;
