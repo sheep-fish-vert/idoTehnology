@@ -38,6 +38,9 @@
                 if(event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED){
                     $('.video-placeholder').removeClass('active');
                 }
+                if(event.data == YT.PlayerState.PLAYING){
+                  $('.video-placeholder').addClass('active');
+                }
             }
 
         /* /initialized event pause video */
@@ -46,7 +49,7 @@
 
     function clickPlayButton(){
 
-        $(document).on('click', '.triangle-button', function(){
+        $(document).on('click', '.video-placeholder', function(){
             console.log('hi');
             $('.video-placeholder').addClass('active');
             player.playVideo();
