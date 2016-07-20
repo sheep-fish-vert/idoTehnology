@@ -395,6 +395,9 @@ function someAjax(item, someUrl, successFunc, someData){
 /* blog scripts */
 
 
+
+
+
 $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
