@@ -232,7 +232,14 @@ function fancyboxForm3(){
         wrapCSS:'fancybox-wrap3',
         fitToView   : false,
         autoSize    : true,
-        padding:'0'
+        padding:'0',
+        helpers:{
+            overlay:{
+                css:{
+                    background:'rgba(0, 0, 0, 0.7)'
+                }
+            }
+        }
     })
 }
 
