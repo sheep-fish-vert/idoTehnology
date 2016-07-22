@@ -420,16 +420,16 @@
 /* professional-services-description */
 
     .professional-services-description{padding-bottom: 85px;
-
-        .professional-description-wrap{display: flex;justify-content: space-between;align-items: flex-start;}
+        h3{font-size: 36px;font-family: 'Museo', sans-serif;font-weight: 500;line-height: 1.05;margin-bottom: 25px;}
+        p{line-height: 1.65; }
+        .professional-description-wrap{columns: 2;}
 
         .professional-description-col{width: calc(50% - 30px);
             &:last-child{padding-left:27px;}
             .professional-description-text{margin-bottom: 50px;
                 &:last-child{margin-bottom: 0;}
                 &.ctext{
-                    h3{font-size: 36px;font-family: 'Museo', sans-serif;font-weight: 500;line-height: 1.05;margin-bottom: 23px;}
-                    p{line-height: 1.65;}
+                    
                 }
             }
         }
