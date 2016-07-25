@@ -477,4 +477,29 @@
 		}
 	}
 
+/* */
+	.fixing-computers-right{position: absolute; top: 450px; right: 0;
+		.fixing-computers-button{ display: flex; flex-direction: column; align-items: center;
+			.button.gray{margin-bottom: 10px;				
+			}	
+			a{margin-bottom: 10px;	}
+		}
+		.fixing-computers-button-bottom{ text-align: center;
+			a{
+				span{color: #2b81da; font-style: italic; font-family: "Museo";}
+			}
+		}
+	}	
+	.it-service{
+		.right-column-main{float: none;
+			.it-service-partial{	
+							
+				.fixing-computers-text{
+					max-width: 800px;
+				}				
+			}			
+		}
+	}
+/* */
+
 	
