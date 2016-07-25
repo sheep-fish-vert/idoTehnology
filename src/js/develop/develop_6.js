@@ -18,6 +18,15 @@ var currentVideoPlaceholder;
 
             function onYouTubeIframeAPIReady() {
 
+                player = new YT.Player('player',{
+                    height:'410',
+                    widht:'730',
+                    videoId:playerId,
+                    events:{
+                        'onStateChange':videoPause
+                    }
+                });
+
                 player1 = new YT.Player('player0',{
                     height:'410',
                     widht:'730',
@@ -53,7 +62,6 @@ var currentVideoPlaceholder;
         /* initialized event pause/play video */
 
             function videoPause(event){
-               console.log(player3);
                 if(event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED){
                     currentVideoPlaceholder.removeClass('active');
                 }
@@ -78,7 +86,9 @@ var currentVideoPlaceholder;
             player2.playVideo();
           }else if(currentVideoPlaceholder == 3){
             player3.playVideo();
-          };
+          } else{
+            player.playVideo();
+          }
 
         });
 
