@@ -332,7 +332,7 @@
 					.items-row-video-wrap{ order: 1;}
 				}
 			
-				.text-items-row-wrap{width: calc(100% * 0.35); background: #ebf0f3; padding: 20px;
+				.text-items-row-wrap{width: calc(100% * 0.35); background: #ebf0f3; padding: 20px; position: relative;
 					.item-tag-line{display: flex;justify-content: flex-start;align-items: center;flex-wrap:wrap; margin-bottom: 5px;
 		                .tag{display: block;padding:5px 5px;color:#fff;font-family:'Museo', sans-serif;font-size: 11px;font-weight: 300;background-color:rgba(0, 0, 0, .6);cursor:pointer;transition:all 300ms ease;
 		                    &:hover{background-color:rgba(43, 59, 218, .7);}
@@ -346,25 +346,31 @@
 		            .text-conteiner{
 		            	p{margin: 0; font-size: 13px; line-height:1.5 }
 		            }
+		            .more-wrapper{position: absolute; bottom: 10px;  color: #000; display: none;
+		            	.more{font-size: 18px; font-weight: bold;}
+		            }
 				}
 
 				.items-row-video-wrap{width: calc(100% * 0.65);position: relative;
-					a{
-						&:hover{
-							.triangle-button{background-color:rgba(43, 59, 218, 0.8);transform: scale(1.1);
-							}
+					.video-wrapper{position: relative; width: 100%;max-width: 730px; height: 100%; margin: 0 auto; z-index: 0;
+						.video-placeholder{position: absolute;top: 0;left: 0;right: 0;bottom: 0;
+							&.active{display: none;}
+							&:hover{cursor:pointer;
+									.triangle-button{background-color:rgb(53, 69, 235);transform: scale(1.1);
+									
+									}
 
-						}
-						.triangle-button{ min-width: 85px; min-height: 85px; border-radius: 50%; border: 5px solid #fff;  background-color: #2b3bda; position: absolute; top: 50%; left: 50%; margin-left: -47px; margin-top: -47px; transition: 0.2s; transform-origin: center center;
-								img{position: absolute; top: 50%; left: 50%; margin-left: -11px; margin-top: -17px; 								
 								}
-							
-							// &:after{content: ""; display: block; position: absolute; border-top: 40px solid #fff; top: 13px; left: 30px; border-left: 25px solid transparent; border-bottom: 20px solid transparent; border-right: 25px solid transparent; border-radius: 5px;transform: rotate(-90deg); 
-							// } 
-							
-							
+							.triangle-button{min-width: 85px;min-height: 85px;border-radius: 50%;border: 5px solid #fff;background-color: #2b3bda;position: absolute;top: 50%;left: 50%;margin-left: -47px;margin-top: -47px;transition: 0.2s;transform-origin: center center;
+								img{position: absolute; top: 50%; left: 50%; margin-left: -11px; margin-top: -17px; 
+										}
+								
+							}
 						}
-					}
+				.video{
+					iframe{width: 100%;}
+				}
+			}
 				}
 			}
 

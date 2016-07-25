@@ -1,4 +1,4 @@
-
+var currentVideoPlaceholder;
 /* click play button on video */
 
     /* added video by not doc ready AHTUNG */
@@ -18,7 +18,25 @@
 
             function onYouTubeIframeAPIReady() {
 
-                player = new YT.Player('player',{
+                player1 = new YT.Player('player0',{
+                    height:'410',
+                    widht:'730',
+                    videoId:playerId,
+                    events:{
+                        'onStateChange':videoPause
+                    }
+                });
+
+                player2 = new YT.Player('player1',{
+                    height:'410',
+                    widht:'730',
+                    videoId:playerId,
+                    events:{
+                        'onStateChange':videoPause
+                    }
+                });
+
+                player3 = new YT.Player('player2',{
                     height:'410',
                     widht:'730',
                     videoId:playerId,
@@ -32,14 +50,15 @@
 
         /* /initialized youtube video */
 
-        /* initialized event pause video */
+        /* initialized event pause/play video */
 
             function videoPause(event){
+               console.log(player3);
                 if(event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED){
-                    $('.video-placeholder').removeClass('active');
+                    currentVideoPlaceholder.removeClass('active');
                 }
                 if(event.data == YT.PlayerState.PLAYING){
-                  $('.video-placeholder').addClass('active');
+                 currentVideoPlaceholder.addClass('active');
                 }
             }
 
@@ -51,8 +70,15 @@
 
         $(document).on('click', '.video-placeholder', function(){
             console.log('hi');
-            $('.video-placeholder').addClass('active');
-            player.playVideo();
+            $(this).addClass('active');
+            currentVideoPlaceholder = $(this).data('current')
+            if(currentVideoPlaceholder == 1){
+            player1.playVideo();
+          }else if(currentVideoPlaceholder == 2){
+            player2.playVideo();
+          }else if(currentVideoPlaceholder == 3){
+            player3.playVideo();
+          };
 
         });
 
