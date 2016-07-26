@@ -46,3 +46,12 @@
 
 }
 .footer .footer-wrap-mobile .mobile-middle p span {font-weight: 400;}
+
+
+.convert-for-noob{margin-left: calc((100% - 1200px)/2); 
+    .right-column-main{position: relative;
+        .fixing-computers-right{position: absolute !important; right: 0; top: 0; width: 470px !important;}
+    }
+}
+.fixing-computers .fixing-computers-center .fixing-computers-right .fixing-computers-right-img {position: static;}
+.fixing-computers .fixing-computers-center .fixing-computers-right .fixing-computers-button{display: flex; align-items: center; justify-content: space-around; flex-direction: row !important; padding-top: 15px;}
