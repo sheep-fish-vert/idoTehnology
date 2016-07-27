@@ -118,14 +118,14 @@ header{background-color: #2b81da;position: relative;z-index: 84;
 // services fixing computers
 .fixing-computers{
     .fixing-computers-mobile-img{display: none;}
-    .fixing-computers-top{padding-bottom: 52px;
+    .fixing-computers-top{padding-bottom: 52px; width: calc(100% - 470px);
         .fixing-computers-title{background-color: #fff;}
         .fixing-computers-text{font-size: 16px;font-family: "Open Sans" ;color: rgb(0, 0, 0);line-height: 1.5;padding-top: 23px; max-width: 624px;}
     }
     .fixing-computers-title{
         h3{margin: 0;font-size: 42px;color: #000;font-family: 'Muller';}
     }
-    .fixing-computers-center{margin-bottom: 52px;display: flex;flex-wrap: wrap;
+    .fixing-computers-center{margin-bottom: 52px;display: flex;flex-wrap: wrap; position: static;
         .fixing-computers-left{width: 470px;
             .fixing-computers-table{width: 100%;max-width: 470px;padding-top: 19px;
                 table{width: 100%;
@@ -138,13 +138,13 @@ header{background-color: #2b81da;position: relative;z-index: 84;
             }
         }
         .fixing-computers-right{position: relative;display: flex;flex-direction: column;justify-content: flex-end;width: calc(100% - 470px);padding-bottom: 39px;
-            .fixing-computers-right-img{position: absolute;top: -38.9%;left: calc(100% - 253px);
+            .fixing-computers-right-img{left: calc(100% - 253px);
                 img{max-width: none;}
             }
-            .fixing-computers-button{display: flex;justify-content: flex-end;
+            .fixing-computers-button{display: flex;  max-width: 360px; justify-content: space-between;
                 a{margin-left: 16px;}
             }
-            .fixing-computers-button-bottom{text-align: right;
+            .fixing-computers-button-bottom{text-align: right;max-width: 360px;
                 p{margin: 6px 0;}
                 a{color: #2b81da;font-size: 14px;font-style: italic;font-weight: 600;
                     &:hover{text-decoration: none;}
@@ -161,3 +161,10 @@ header{background-color: #2b81da;position: relative;z-index: 84;
         span{display: inline-block;margin: 0 6px;}
     }
 }
+
+
+    .fixing-computers .fixing-computers-top{width: 100%; }
+    .fixing-computers-right .fixing-computers-button{flex-direction: row !important; justify-content: space-between; max-width: 360px;}
+    .fixing-computers-right .fixing-computers-button-bottom{max-width: 360px; text-align: right !important;
+        
+    }

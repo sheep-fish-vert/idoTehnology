@@ -1,10 +1,28 @@
 @media screen and (max-width: 1920px){
 
 }
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1420px){
+
+    .fixing-computers-right{position: static !important; max-width: 510px; margin: 0 auto;}
+    .it-service .right-column-main{margin: 0 auto;}
+    .fixing-computers-right .fixing-computers-button{max-width: 100%;}
+    .fixing-computers-right .fixing-computers-button-bottom{max-width: 100%;}
 
 }
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1300px){
+
+    .convert-for-noob .right-column-main .fixing-computers-right{position: static !important; width: 100% !important; 
+        .fixing-computers-right-img{ max-width: 510px; margin: 0 auto;}
+    }
+    .fixing-computers .fixing-computers-top { width: 100%; }
+    .fixing-computers .fixing-computers-center{width: 100%; }
+    .fixing-computers .fixing-computers-center .fixing-computers-left{margin: 0 auto;}
+    .convert-for-noob .right-column-main{width: calc(100% - 500px);}
+    .right-column-main{float: left;}
+    .convert-for-noob{margin: 0; padding: 15px;}
+    .fixing-computers .fixing-computers-center .fixing-computers-right .fixing-computers-button-bottom {text-align: right; max-width: 100%;}
+    .fixing-computers .fixing-computers-center .fixing-computers-right .fixing-computers-button{max-width: 100% !important;}
+    
 
 }
 @media screen and (max-width: 1280px){
@@ -38,6 +56,8 @@
         }
     }
     .service-bottom .service-bottom-reviews-title{text-align: center;}
+
+    .fixing-computers .fixing-computers-center .fixing-computers-right .fixing-computers-button{justify-content: space-between;}
 }
 @media screen and (max-width: 1024px){
     header{
@@ -171,6 +191,9 @@
             }
         }
     }
+
+    .convert-for-noob .right-column-main{width: 90%; margin: 0 auto;}
+    .fixing-computers .fixing-computers-center .fixing-computers-right{max-width: 470px;}
 
 }
 @media screen and (max-width: 768px){
