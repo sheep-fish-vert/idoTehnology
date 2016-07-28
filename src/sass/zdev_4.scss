@@ -120,7 +120,7 @@ header{background-color: #2b81da;position: relative;z-index: 84;
     .fixing-computers-mobile-img{display: none;}
     .fixing-computers-top{padding-bottom: 52px; width: calc(100% - 470px);
         .fixing-computers-title{background-color: #fff;}
-        .fixing-computers-text{font-size: 16px;font-family: "Open Sans" ;color: rgb(0, 0, 0);line-height: 1.5;padding-top: 23px; max-width: 624px;}
+        .fixing-computers-text{font-size: 16px;font-family: "Open Sans" ;color: rgb(0, 0, 0);line-height: 1.5;padding-top: 23px; max-width: 624px; padding-right: 20px;}
     }
     .fixing-computers-title{
         h3{margin: 0;font-size: 42px;color: #000;font-family: 'Muller';}
@@ -141,7 +141,7 @@ header{background-color: #2b81da;position: relative;z-index: 84;
             .fixing-computers-right-img{left: calc(100% - 253px);
                 img{max-width: none;}
             }
-            .fixing-computers-button{display: flex;  max-width: 360px; justify-content: space-between;
+            .fixing-computers-button{display: flex;  max-width: 360px; justify-content: flex-end;
                 a{margin-left: 16px;}
             }
             .fixing-computers-button-bottom{text-align: right;max-width: 360px;
@@ -164,7 +164,9 @@ header{background-color: #2b81da;position: relative;z-index: 84;
 
 
     .fixing-computers .fixing-computers-top{width: 100%; }
-    .fixing-computers-right .fixing-computers-button{flex-direction: row !important; justify-content: space-between; max-width: 360px;}
+    .fixing-computers-right .fixing-computers-button{flex-direction: row !important; justify-content: flex-end; max-width: 360px;
+        .grey{margin-right: 10px;}
+    }
     .fixing-computers-right .fixing-computers-button-bottom{max-width: 360px; text-align: right !important;
         
     }
