@@ -242,6 +242,21 @@ function fancyboxForm3(){
         }
     })
 }
+function fancyboxForm4(){
+    $('.fancybox-form4').fancybox({
+        openEffect  : 'fade',
+        closeEffect : 'fade',
+        wrapCSS:'fancybox-wrap4',
+        maxWidth    : 670,
+        maxHeight   : 437,
+        fitToView   : false,
+        width       : '90%',
+        height      : '90%',
+
+        autoSize    : false,
+        padding:'0'
+    })
+}
 
 //ajax func for programmer
 
@@ -414,6 +429,7 @@ $(document).ready(function(){
    fancyboxForm();
    fancyboxForm2();
    fancyboxForm3();
+   fancyboxForm4();
 
    blogLoadMore();
 
